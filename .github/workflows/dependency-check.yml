@@ -20,4 +20,4 @@ jobs:
       - name: Check dependencies
         run: |
           pip install safety
-          safety check -r backend/requirements.txt
+          safety check -r requirements.txt

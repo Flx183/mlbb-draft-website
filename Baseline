@@ -1,0 +1,74 @@
+# Baseline
+# This is a baseline model using logistic regression to predict match outcomes based on hero statistics.
+# Logistic Regression Model to Predict Match Outcomes considering the small dataset size and the target variable being binary (win/loss).
+
+import pandas as pd
+import numpy as np
+import os
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import (accuracy_score, mean_squared_error, log_loss, roc_auc_score, brier_score_loss)
+
+df = pd.read_csv(os.path.expanduser("~/Desktop/mlbb_hero_stats_lanes_and_strength.csv"))
+df["GradeScore"] = df["HeroGrade"].map({"S": 5, "A": 4, "B": 3, "C": 2, "D": 1})
+
+df["w"] = df["WinRatePercent"] / 100
+df["pb"] = df["PickRatePercent"] / 100
+
+hero_index = df.set_index("Hero")
+
+macthdf = pd.read_csv(os.path.expanduser("~/Desktop/match_data_mplphs16.csv"))
+
+def teamAvg(teamlist, prefix):
+    teamdf = hero_index.loc[teamlist]
+    return {
+        f"{prefix}_AvgGrade": teamdf["GradeScore"].mean(),
+        f"{prefix}_AvgWinRate": teamdf["WinRatePercent"].mean(),
+        f"{prefix}_AvgPickBan": teamdf["PickBanPercent"].mean(),
+    }
+
+match_features = []
+targets = []
+
+for _, row in macthdf.iterrows():
+    if pd.isna(row["TeamA_Hero1"]):
+        continue
+    teamA_heroes = [row[f"TeamA_Hero{i}"] for i in range(1, 6)]
+    teamB_heroes = [row[f"TeamB_Hero{i}"] for i in range(1, 6)]
+    featuresA = teamAvg(teamA_heroes, "teamA")
+    featuresB = teamAvg(teamB_heroes, "teamB")
+
+    match_feature = {**featuresA, **featuresB}
+    match_feature["Diff_Grade"] = featuresA["teamA_AvgGrade"] - featuresB["teamB_AvgGrade"]
+    match_feature["Diff_Win"] = featuresA["teamA_AvgWinRate"] - featuresB["teamB_AvgWinRate"]
+    match_feature["Diff_PickBan"] = featuresA["teamA_AvgPickBan"] - featuresB["teamB_AvgPickBan"]
+
+    match_features.append(match_feature)
+
+    targets.append(row["TeamA_Win"])
+
+feature_df = pd.DataFrame(match_features)
+
+x = feature_df[["Diff_Grade", "Diff_Win", "Diff_PickBan"]] 
+y = np.array(targets)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
+
+model = LogisticRegression()
+model.fit(x_train, y_train)
+y_pred = model.predict(x_test)
+y_proba = model.predict_proba(x_test)[:, 1]
+
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.4f}") # 81.82% correct predictions
+mse = mean_squared_error(y_test, y_pred)
+print(f"MSE: {mse:.4f}") # 18.18% incorrect predictions
+ll = log_loss(y_test, y_proba)
+true_class_prob = np.exp(-ll)
+print(f"Log Loss: {ll:.4f}") # 0.5979
+print (f"True Class Probability: {true_class_prob:.4f}") # 55% probability of correct predictions
+roc_auc = roc_auc_score(y_test, y_proba)
+print(f"ROC AUC: {roc_auc:.4f}") # 75% model can distinguish between win or loss
+brier_score = brier_score_loss(y_test, y_proba)
+print(f"Brier Score: {brier_score:.4f}") # 0.1994 indicates how far predictions are from actual outcomes
+
+

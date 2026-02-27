@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (accuracy_score, mean_squared_error, log_loss, roc_auc_score, brier_score_loss)
 
-df = pd.read_csv(os.path.expanduser("~/Desktop/mlbb_hero_stats_lanes_and_strength.csv"))
+df = pd.read_csv(os.path.expanduser("./mlbb_hero_stats_lanes_and_strength.csv"))
 df["GradeScore"] = df["HeroGrade"].map({"S": 5, "A": 4, "B": 3, "C": 2, "D": 1})
 
 df["w"] = df["WinRatePercent"] / 100
@@ -17,7 +17,7 @@ df["pb"] = df["PickRatePercent"] / 100
 
 hero_index = df.set_index("Hero")
 
-macthdf = pd.read_csv(os.path.expanduser("~/Desktop/match_data_mplphs16.csv"))
+macthdf = pd.read_csv(os.path.expanduser("./match_data_mplphs16.csv"))
 
 def teamAvg(teamlist, prefix):
     teamdf = hero_index.loc[teamlist]

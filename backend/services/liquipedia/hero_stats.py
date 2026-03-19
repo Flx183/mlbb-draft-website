@@ -7,6 +7,7 @@ def make_hero_record() -> dict:
         "banned": 0,
         "wins": 0,
         "win_rate": 0.0,
+        "ban_orders": defaultdict(int),
         "roles": defaultdict(lambda: {
             "picked": 0,
             "wins": 0,
@@ -37,11 +38,14 @@ def update_team_picks(hero_stats: dict, picks: list[dict], did_win: bool):
 def update_team_bans(hero_stats: dict, bans: list[dict]):
     for ban in bans:
         hero = ban.get("hero")
+        ban_order = ban.get("ban_order")
         if not hero:
             continue
         if hero not in hero_stats:
             hero_stats[hero] = make_hero_record()
         hero_stats[hero]["banned"] += 1
+        if ban_order is not None:
+            hero_stats[hero]["ban_orders"][str(ban_order)] += 1
 
 def calculate_win_rates(hero_stats: dict):
     finalized_stats = {}
@@ -56,6 +60,7 @@ def calculate_win_rates(hero_stats: dict):
             "banned": banned,
             "wins": wins,
             "win_rate": win_rate,
+            "ban_orders": dict(sorted(stats["ban_orders"].items(), key=lambda x: int(x[0]))),
             "roles": {},
         }
 
@@ -102,6 +107,11 @@ def merge_hero_stats(base: dict, incoming: dict) -> dict:
         base[hero]["picked"] += stats["picked"]
         base[hero]["banned"] += stats["banned"]
         base[hero]["wins"] += stats["wins"]
+
+        for ban_order, count in stats.get("ban_orders", {}).items():
+            if "ban_orders" not in base[hero]:
+                base[hero]["ban_orders"] = {}
+            base[hero]["ban_orders"][ban_order] = base[hero]["ban_orders"].get(ban_order, 0) + count
 
         for role, role_stats in stats["roles"].items():
             if role not in base[hero]["roles"]:

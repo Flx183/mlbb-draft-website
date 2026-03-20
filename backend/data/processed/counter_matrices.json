@@ -1,0 +1,9464 @@
+{
+  "Yu Zhong": {
+    "Uranus": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Yi Sun-shin": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Pharsa": {
+      "games": 11,
+      "wins": 5,
+      "win_rate": 0.4545
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Chou": {
+      "games": 12,
+      "wins": 7,
+      "win_rate": 0.5833
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lancelot": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Harith": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 3,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kalea": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Esmeralda": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 7,
+      "wins": 2,
+      "win_rate": 0.2857
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Baxia": {
+    "Uranus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Joy": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cecilion": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Kimmy": {
+    "Uranus": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Cici": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Phoveus": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Lancelot": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Claude": {
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Granger": {
+    "Uranus": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Yi Sun-shin": {
+      "games": 10,
+      "wins": 3,
+      "win_rate": 0.3
+    },
+    "Pharsa": {
+      "games": 11,
+      "wins": 4,
+      "win_rate": 0.3636
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 7,
+      "wins": 6,
+      "win_rate": 0.8571
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 5,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Claude": {
+      "games": 8,
+      "wins": 3,
+      "win_rate": 0.375
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Yve": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Karrie": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Bruno": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Grock": {
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 10,
+      "wins": 7,
+      "win_rate": 0.7
+    },
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Minotaur": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Uranus": {
+    "Yu Zhong": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 8,
+      "wins": 6,
+      "win_rate": 0.75
+    },
+    "Yi Sun-shin": {
+      "games": 12,
+      "wins": 6,
+      "win_rate": 0.5
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Hylos": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 10,
+      "wins": 7,
+      "win_rate": 0.7
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Fanny": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Zhuxin": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 6,
+      "win_rate": 0.6667
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Yve": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Tigreal": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lancelot": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Selena": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Chip": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Odette": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Yi Sun-shin": {
+    "Yu Zhong": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Granger": {
+      "games": 10,
+      "wins": 7,
+      "win_rate": 0.7
+    },
+    "Grock": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 12,
+      "wins": 6,
+      "win_rate": 0.5
+    },
+    "Lancelot": {
+      "games": 8,
+      "wins": 5,
+      "win_rate": 0.625
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 11,
+      "wins": 4,
+      "win_rate": 0.3636
+    },
+    "Khaleed": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Valentina": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 12,
+      "wins": 7,
+      "win_rate": 0.5833
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lapu-Lapu": {
+      "games": 9,
+      "wins": 3,
+      "win_rate": 0.3333
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 13,
+      "wins": 8,
+      "win_rate": 0.6154
+    },
+    "Sora": {
+      "games": 10,
+      "wins": 6,
+      "win_rate": 0.6
+    },
+    "Leomord": {
+      "games": 12,
+      "wins": 7,
+      "win_rate": 0.5833
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Minsitthar": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 7,
+      "wins": 2,
+      "win_rate": 0.2857
+    },
+    "Harith": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Lukas": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Karrie": {
+      "games": 7,
+      "wins": 6,
+      "win_rate": 0.8571
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Selena": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Pharsa": {
+    "Yu Zhong": {
+      "games": 11,
+      "wins": 6,
+      "win_rate": 0.5455
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Granger": {
+      "games": 11,
+      "wins": 7,
+      "win_rate": 0.6364
+    },
+    "Grock": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Uranus": {
+      "games": 10,
+      "wins": 3,
+      "win_rate": 0.3
+    },
+    "Joy": {
+      "games": 10,
+      "wins": 6,
+      "win_rate": 0.6
+    },
+    "Valentina": {
+      "games": 12,
+      "wins": 6,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Tigreal": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Hilda": {
+      "games": 10,
+      "wins": 6,
+      "win_rate": 0.6
+    },
+    "Lapu-Lapu": {
+      "games": 12,
+      "wins": 4,
+      "win_rate": 0.3333
+    },
+    "Hayabusa": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kagura": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Esmeralda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 13,
+      "wins": 5,
+      "win_rate": 0.3846
+    },
+    "Lunox": {
+      "games": 7,
+      "wins": 1,
+      "win_rate": 0.1429
+    },
+    "Cici": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 10,
+      "wins": 2,
+      "win_rate": 0.2
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 11,
+      "wins": 6,
+      "win_rate": 0.5455
+    },
+    "Minsitthar": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fanny": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Zhuxin": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Yve": {
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667
+    },
+    "Kalea": {
+      "games": 8,
+      "wins": 3,
+      "win_rate": 0.375
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Fredrinn": {
+      "games": 5,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Akai": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Mathilda": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lancelot": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Selena": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Kadita": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Bruno": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Cici": {
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kimmy": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Claude": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Chou": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Khaleed": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Chou": {
+    "Yu Zhong": {
+      "games": 12,
+      "wins": 5,
+      "win_rate": 0.4167
+    },
+    "Baxia": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Kimmy": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 7,
+      "wins": 1,
+      "win_rate": 0.1429
+    },
+    "Grock": {
+      "games": 10,
+      "wins": 3,
+      "win_rate": 0.3
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333
+    },
+    "Yve": {
+      "games": 10,
+      "wins": 3,
+      "win_rate": 0.3
+    },
+    "Harith": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Khaleed": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Uranus": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 12,
+      "wins": 5,
+      "win_rate": 0.4167
+    },
+    "Cici": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Hilda": {
+      "games": 11,
+      "wins": 5,
+      "win_rate": 0.4545
+    },
+    "Esmeralda": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Pharsa": {
+      "games": 10,
+      "wins": 8,
+      "win_rate": 0.8
+    },
+    "Sora": {
+      "games": 8,
+      "wins": 3,
+      "win_rate": 0.375
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Minsitthar": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 11,
+      "wins": 4,
+      "win_rate": 0.3636
+    },
+    "Hylos": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Luo Yi": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667
+    },
+    "Arlott": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Lunox": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 8,
+      "wins": 6,
+      "win_rate": 0.75
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Bruno": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Joy": {
+    "Phoveus": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 10,
+      "wins": 4,
+      "win_rate": 0.4
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Freya": {
+    "Phoveus": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Uranus": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 12,
+      "wins": 9,
+      "win_rate": 0.75
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Tigreal": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Sora": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kimmy": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Minsitthar": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Hilda": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Luo Yi": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Baxia": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Phoveus": {
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Joy": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Freya": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Lancelot": {
+    "Yu Zhong": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Joy": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667
+    },
+    "Esmeralda": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Yi Sun-shin": {
+      "games": 8,
+      "wins": 3,
+      "win_rate": 0.375
+    },
+    "Lunox": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Hilda": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Yve": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Karrie": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Minotaur": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Odette": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Yve": {
+    "Yu Zhong": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Freya": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Chou": {
+      "games": 10,
+      "wins": 7,
+      "win_rate": 0.7
+    },
+    "Esmeralda": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 15,
+      "wins": 7,
+      "win_rate": 0.4667
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Alice": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Harith": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Khaleed": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Hylos": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Lukas": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Karrie": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Odette": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cecilion": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Harith": {
+    "Yu Zhong": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Claude": {
+      "games": 10,
+      "wins": 6,
+      "win_rate": 0.6
+    },
+    "Yve": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kalea": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Nolan": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Odette": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Khaleed": {
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Freya": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Sora": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Claude": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Cici": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Hilda": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kaja": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Selena": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Lylia": {
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Claude": {
+    "Esmeralda": {
+      "games": 7,
+      "wins": 6,
+      "win_rate": 0.8571
+    },
+    "Yi Sun-shin": {
+      "games": 11,
+      "wins": 7,
+      "win_rate": 0.6364
+    },
+    "Lunox": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 12,
+      "wins": 3,
+      "win_rate": 0.25
+    },
+    "Hylos": {
+      "games": 9,
+      "wins": 3,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Kalea": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Uranus": {
+      "games": 9,
+      "wins": 3,
+      "win_rate": 0.3333
+    },
+    "Yve": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Cici": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Hilda": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Zhuxin": {
+      "games": 14,
+      "wins": 6,
+      "win_rate": 0.4286
+    },
+    "Moskov": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Helcurt": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yu Zhong": {
+      "games": 9,
+      "wins": 6,
+      "win_rate": 0.6667
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 10,
+      "wins": 4,
+      "win_rate": 0.4
+    },
+    "Grock": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Lapu-Lapu": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 8,
+      "wins": 5,
+      "win_rate": 0.625
+    },
+    "Chou": {
+      "games": 11,
+      "wins": 7,
+      "win_rate": 0.6364
+    },
+    "Fredrinn": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Khaleed": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 14,
+      "wins": 8,
+      "win_rate": 0.5714
+    },
+    "Akai": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kimmy": {
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667
+    },
+    "Sora": {
+      "games": 12,
+      "wins": 9,
+      "win_rate": 0.75
+    },
+    "Hayabusa": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Zetian": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Gatotkaca": {
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kaja": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Valentina": {
+      "games": 7,
+      "wins": 6,
+      "win_rate": 0.8571
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 15,
+      "wins": 11,
+      "win_rate": 0.7333
+    },
+    "Benedetta": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Nolan": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Minotaur": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cecilion": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Esmeralda": {
+    "Uranus": {
+      "games": 8,
+      "wins": 2,
+      "win_rate": 0.25
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 7,
+      "wins": 1,
+      "win_rate": 0.1429
+    },
+    "Khaleed": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Yve": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Cici": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Hilda": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Sora": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 6,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Freya": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Terizla": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 7,
+      "wins": 2,
+      "win_rate": 0.2857
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Bruno": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Lunox": {
+    "Uranus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 6,
+      "wins": 6,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 7,
+      "wins": 6,
+      "win_rate": 0.8571
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Minotaur": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Hylos": {
+    "Uranus": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 6,
+      "win_rate": 0.6667
+    },
+    "Khaleed": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Nolan": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Kalea": {
+    "Uranus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Claude": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Tigreal": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 7,
+      "wins": 2,
+      "win_rate": 0.2857
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 8,
+      "wins": 5,
+      "win_rate": 0.625
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Hylos": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yu Zhong": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Yi Sun-shin": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Harith": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Faramis": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Cecilion": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Valentina": {
+    "Esmeralda": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Yi Sun-shin": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Pharsa": {
+      "games": 12,
+      "wins": 6,
+      "win_rate": 0.5
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Sora": {
+      "games": 8,
+      "wins": 5,
+      "win_rate": 0.625
+    },
+    "Badang": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Lukas": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 7,
+      "wins": 1,
+      "win_rate": 0.1429
+    },
+    "Uranus": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Tigreal": {
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Fanny": {
+    "Uranus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Moskov": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Zhuxin": {
+    "Uranus": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 15,
+      "wins": 8,
+      "win_rate": 0.5333
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Hilda": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lylia": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 14,
+      "wins": 8,
+      "win_rate": 0.5714
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Leomord": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Pharsa": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Hylos": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 7,
+      "wins": 5,
+      "win_rate": 0.7143
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kaja": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Chip": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 4,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Nolan": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Hilda": {
+    "Esmeralda": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Fanny": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Zhuxin": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Chou": {
+      "games": 11,
+      "wins": 6,
+      "win_rate": 0.5455
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Pharsa": {
+      "games": 10,
+      "wins": 4,
+      "win_rate": 0.4
+    },
+    "Sora": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Badang": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Guinevere": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Cici": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Khaleed": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Leomord": {
+      "games": 10,
+      "wins": 7,
+      "win_rate": 0.7
+    },
+    "Yve": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Uranus": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lukas": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Sora": {
+    "Gloo": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 8,
+      "wins": 3,
+      "win_rate": 0.375
+    },
+    "Granger": {
+      "games": 5,
+      "wins": 5,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Lapu-Lapu": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Hayabusa": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Esmeralda": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Phoveus": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 10,
+      "wins": 4,
+      "win_rate": 0.4
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 8,
+      "wins": 5,
+      "win_rate": 0.625
+    },
+    "Uranus": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 8,
+      "wins": 4,
+      "win_rate": 0.5
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 11,
+      "wins": 5,
+      "win_rate": 0.4545
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Khaleed": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Alice": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 12,
+      "wins": 3,
+      "win_rate": 0.25
+    },
+    "Lukas": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cecilion": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Badang": {
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Gloo": {
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Lapu-Lapu": {
+    "Phoveus": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Yi Sun-shin": {
+      "games": 9,
+      "wins": 6,
+      "win_rate": 0.6667
+    },
+    "Pharsa": {
+      "games": 12,
+      "wins": 8,
+      "win_rate": 0.6667
+    },
+    "Sora": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Leomord": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Minsitthar": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Claude": {
+      "games": 9,
+      "wins": 4,
+      "win_rate": 0.4444
+    },
+    "Hylos": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Yve": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Chou": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Uranus": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Arlott": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Cici": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 7,
+      "wins": 5,
+      "win_rate": 0.7143
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Hayabusa": {
+    "Phoveus": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Sora": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Chou": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kaja": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Uranus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Kagura": {
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Guinevere": {
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Alice": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Alice": {
+    "Uranus": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Yve": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Esmeralda": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Moskov": {
+    "Uranus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Helcurt": {
+    "Uranus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Leomord": {
+    "Esmeralda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Yi Sun-shin": {
+      "games": 12,
+      "wins": 5,
+      "win_rate": 0.4167
+    },
+    "Pharsa": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 7,
+      "wins": 5,
+      "win_rate": 0.7143
+    },
+    "Yu Zhong": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Guinevere": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Novaria": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Freya": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Gatotkaca": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Lapu-Lapu": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Chou": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Alice": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Fanny": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Zhuxin": {
+      "games": 9,
+      "wins": 5,
+      "win_rate": 0.5556
+    },
+    "Granger": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Arlott": {
+      "games": 5,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Harley": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 7,
+      "wins": 4,
+      "win_rate": 0.5714
+    },
+    "Hilda": {
+      "games": 10,
+      "wins": 3,
+      "win_rate": 0.3
+    },
+    "Luo Yi": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Zetian": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Lunox": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 14,
+      "wins": 6,
+      "win_rate": 0.4286
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Akai": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Suyou": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Benedetta": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Badang": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kadita": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Bruno": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "X.Borg": {
+    "Uranus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Novaria": {
+    "Alice": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Harley": {
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Zetian": {
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Pharsa": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Gatotkaca": {
+    "Uranus": {
+      "games": 6,
+      "wins": 2,
+      "win_rate": 0.3333
+    },
+    "Yi Sun-shin": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Valentina": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Leomord": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Pharsa": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Akai": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Kimmy": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 6,
+      "wins": 1,
+      "win_rate": 0.1667
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 5,
+      "wins": 1,
+      "win_rate": 0.2
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Benedetta": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Baxia": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Helcurt": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Granger": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Cici": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Badang": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Arlott": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kadita": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    }
+  },
+  "Terizla": {
+    "Esmeralda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Grock": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Fredrinn": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kimmy": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Minotaur": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Minsitthar": {
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Fredrinn": {
+    "Sora": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Yi Sun-shin": {
+      "games": 7,
+      "wins": 5,
+      "win_rate": 0.7143
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Claude": {
+      "games": 6,
+      "wins": 4,
+      "win_rate": 0.6667
+    },
+    "Hylos": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Esmeralda": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Gloo": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 5,
+      "wins": 5,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 6,
+      "wins": 5,
+      "win_rate": 0.8333
+    },
+    "Hayabusa": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Cici": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Phoveus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Nolan": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yu Zhong": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    }
+  },
+  "Arlott": {
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 5,
+      "wins": 5,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Hilda": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lapu-Lapu": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Chou": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Kaja": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Suyou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 4,
+      "wins": 3,
+      "win_rate": 0.75
+    },
+    "Zhuxin": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Faramis": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Ruby": {
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Moskov": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Luo Yi": {
+    "Uranus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Pharsa": {
+      "games": 5,
+      "wins": 2,
+      "win_rate": 0.4
+    },
+    "Freya": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Chou": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Akai": {
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Lukas": {
+    "Valentina": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Kaja": {
+    "Arlott": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Suyou": {
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Chip": {
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 5,
+      "wins": 4,
+      "win_rate": 0.8
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lylia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Uranus": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Odette": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Nolan": {
+    "Lapu-Lapu": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harith": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Yu Zhong": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Yi Sun-shin": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Claude": {
+      "games": 3,
+      "wins": 3,
+      "win_rate": 1.0
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Akai": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Mathilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hilda": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Kadita": {
+    "Sora": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Leomord": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Pharsa": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Guinevere": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Karrie": {
+    "Uranus": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Yi Sun-shin": {
+      "games": 7,
+      "wins": 1,
+      "win_rate": 0.1429
+    },
+    "Kadita": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 15,
+      "wins": 4,
+      "win_rate": 0.2667
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gloo": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lancelot": {
+      "games": 6,
+      "wins": 3,
+      "win_rate": 0.5
+    },
+    "Kagura": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 8,
+      "wins": 2,
+      "win_rate": 0.25
+    },
+    "Yu Zhong": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Valentina": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Tigreal": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Alice": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Luo Yi": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hylos": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Kimmy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Granger": {
+      "games": 5,
+      "wins": 3,
+      "win_rate": 0.6
+    },
+    "Arlott": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Faramis": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Freya": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lapu-Lapu": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Joy": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Selena": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Fanny": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "X.Borg": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 4,
+      "wins": 2,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Fredrinn": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 7,
+      "wins": 3,
+      "win_rate": 0.4286
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Sora": {
+      "games": 3,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 4,
+      "wins": 1,
+      "win_rate": 0.25
+    },
+    "Zetian": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Terizla": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Harley": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hilda": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Guinevere": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Zhuxin": {
+      "games": 2,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chip": {
+      "games": 3,
+      "wins": 1,
+      "win_rate": 0.3333
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Hayabusa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Benedetta": {
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Joy": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Claude": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Gatotkaca": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Mathilda": {
+    "Yu Zhong": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Ruby": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Phoveus": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Nolan": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Gatotkaca": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Faramis": {
+    "Alice": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lunox": {
+      "games": 2,
+      "wins": 1,
+      "win_rate": 0.5
+    },
+    "Karrie": {
+      "games": 2,
+      "wins": 2,
+      "win_rate": 1.0
+    },
+    "Kalea": {
+      "games": 3,
+      "wins": 2,
+      "win_rate": 0.6667
+    },
+    "Arlott": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Valentina": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Cici": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Selena": {
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yi Sun-shin": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Karrie": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Khaleed": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Bruno": {
+    "Esmeralda": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Leomord": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Pharsa": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Granger": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Chou": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Minotaur": {
+    "Terizla": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Lunox": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Grock": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  },
+  "Odette": {
+    "Uranus": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Lancelot": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Harith": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    },
+    "Chip": {
+      "games": 1,
+      "wins": 1,
+      "win_rate": 1.0
+    }
+  },
+  "Cecilion": {
+    "Sora": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Baxia": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Yve": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Claude": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    },
+    "Kalea": {
+      "games": 1,
+      "wins": 0,
+      "win_rate": 0.0
+    }
+  }
+}

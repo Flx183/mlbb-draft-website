@@ -36,6 +36,7 @@ def parse_and_normalize_matches(data: dict) -> dict:
             team1_side = extradata.get("team1side")
             team2_side = extradata.get("team2side")
             raw_winner = game.get("winner")
+            vod = game.get("vod")
 
             team1_picks = []
             team2_picks = []

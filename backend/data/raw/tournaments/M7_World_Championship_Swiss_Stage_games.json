@@ -108,7 +108,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=vUNv7L87qhw"
         }
       ]
     },
@@ -218,7 +219,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=BXet4JEADb4"
         }
       ]
     },
@@ -328,7 +330,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=zXLZ0qDU83s"
         }
       ]
     },
@@ -438,7 +441,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=_mSPcv89RoA"
         }
       ]
     },
@@ -548,7 +552,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=ebkTT9Hmu-U"
         }
       ]
     },
@@ -658,7 +663,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=94AmjNwwrsI"
         }
       ]
     },
@@ -768,7 +774,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=YwTb_JeyQx0"
         }
       ]
     },
@@ -878,7 +885,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=UUSh-QhZjEk"
         }
       ]
     },
@@ -988,7 +996,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=A6hM-NgI4zk"
         }
       ]
     },
@@ -1098,7 +1107,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=qlBjm8gQuII"
         }
       ]
     },
@@ -1208,7 +1218,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=KYyGh1RLIAM"
         }
       ]
     },
@@ -1318,7 +1329,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=y6P6MZ5o5IE"
         }
       ]
     },
@@ -1428,7 +1440,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=agBoOF4fyMc"
         }
       ]
     },
@@ -1538,7 +1551,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=InDJsefR7o8"
         }
       ]
     },
@@ -1648,7 +1662,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=bB4waJw7C68"
         }
       ]
     },
@@ -1758,7 +1773,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=j3To11JqXXs"
         }
       ]
     },
@@ -1868,7 +1884,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=31D128_m02I"
         }
       ]
     },
@@ -1978,7 +1995,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=vGV5w9bfkmU"
         }
       ]
     },
@@ -2088,7 +2106,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=cH9lxKc9_N0"
         }
       ]
     },
@@ -2198,7 +2217,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=d0ZMpetH-GY"
         }
       ]
     },
@@ -2308,7 +2328,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=Cuvpc3yhCyE"
         }
       ]
     },
@@ -2418,7 +2439,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=FMzUf2KecS0"
         }
       ]
     },
@@ -2528,7 +2550,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=0dgShgTjyNY"
         },
         {
           "game_no": 2,
@@ -2630,7 +2653,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=SUQFgGQqev8"
         }
       ]
     },
@@ -2740,7 +2764,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=4sM_6Ta_Dj0"
         }
       ]
     },
@@ -2850,7 +2875,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=hFSYKNTtVBE"
         }
       ]
     },
@@ -2960,7 +2986,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=4IeCp1vZQHQ"
         }
       ]
     },
@@ -3070,7 +3097,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=3D0Xf78sOSc"
         },
         {
           "game_no": 3,
@@ -3172,7 +3200,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=M9Q4SQ69ie0"
         }
       ]
     },
@@ -3282,7 +3311,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=OYmTbJYwG0U"
         }
       ]
     },
@@ -3392,7 +3422,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=O2ISb-hK87M"
         },
         {
           "game_no": 2,
@@ -3494,7 +3525,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=3MTY7H2qCHs"
         }
       ]
     },
@@ -3604,7 +3636,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=_9Jz7z_yTrk"
         },
         {
           "game_no": 2,
@@ -3706,7 +3739,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=cyRTOt8jbzc"
         }
       ]
     },
@@ -3816,7 +3850,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=_fVh_34K7iA"
         }
       ]
     },
@@ -3926,7 +3961,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=SLT6KfV9t-w"
         }
       ]
     },
@@ -4036,7 +4072,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=6ZSXgmO6Smk"
         },
         {
           "game_no": 2,
@@ -4138,7 +4175,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=1PRoROz_SoE"
         }
       ]
     },
@@ -4248,7 +4286,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=zXgjFT0XcAs"
         }
       ]
     },
@@ -4358,7 +4397,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=w0Vmj84zymk"
         },
         {
           "game_no": 3,
@@ -4460,7 +4500,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=MTJH6cCJQwQ"
         }
       ]
     },
@@ -4570,7 +4611,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=q_GemAaL74Q"
         }
       ]
     },
@@ -4680,7 +4722,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=l_oZFvkgVnc"
         }
       ]
     },
@@ -4790,7 +4833,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=ocKY0Bny0MY"
         }
       ]
     },
@@ -4900,7 +4944,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=7xH1EYxw2zw"
         }
       ]
     },
@@ -5010,7 +5055,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=uzVtVZzG-ic"
         }
       ]
     },
@@ -5120,7 +5166,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=XgErfBThu8M"
         }
       ]
     },
@@ -5230,7 +5277,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=ML43d0dZL1A"
         }
       ]
     },
@@ -5340,7 +5388,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "red"
+          "winner": "red",
+          "vod": "https://www.youtube.com/watch?v=y97JU_4jDwk"
         },
         {
           "game_no": 2,
@@ -5442,7 +5491,8 @@
               "ban_order": 5
             }
           ],
-          "winner": "blue"
+          "winner": "blue",
+          "vod": "https://www.youtube.com/watch?v=vTEFjte0xQU"
         }
       ]
     }

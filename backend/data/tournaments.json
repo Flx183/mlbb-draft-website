@@ -1,5 +1,49 @@
 [
   {
+    "name": "adt_south_season_1_relegation",
+    "wiki": "mobilelegends",
+    "pagename": "ADT/South/Season_1/Relegation",
+    "display_name": "ADT South Season 1 - Relegation",
+    "liquipediatier": "2",
+    "startdate": "2026-03-22 00:30:00",
+    "enddate": "2026-03-22 00:30:00",
+    "conditions": "[[pagename::ADT/South/Season_1/Relegation]]",
+    "active": true
+  },
+  {
+    "name": "mpl_philippines_season_17",
+    "wiki": "mobilelegends",
+    "pagename": "MPL/Philippines/Season_17/Regular_Season",
+    "display_name": "MPL Philippines Season 17",
+    "liquipediatier": "2",
+    "startdate": "2026-03-20 09:00:00",
+    "enddate": "2026-03-22 11:30:00",
+    "conditions": "[[pagename::MPL/Philippines/Season_17/Regular_Season]]",
+    "active": true
+  },
+  {
+    "name": "msl_myanmar_season_3",
+    "wiki": "mobilelegends",
+    "pagename": "MLBB_Super_League/Myanmar/Season_3/Regular_Season",
+    "display_name": "MSL Myanmar Season 3",
+    "liquipediatier": "2",
+    "startdate": "2026-03-20 08:30:00",
+    "enddate": "2026-03-22 12:30:00",
+    "conditions": "[[pagename::MLBB_Super_League/Myanmar/Season_3/Regular_Season]]",
+    "active": true
+  },
+  {
+    "name": "mpl_cambodia_season_10_qualifier",
+    "wiki": "mobilelegends",
+    "pagename": "MPL/Cambodia/Season_10/Qualifier",
+    "display_name": "MPL Cambodia Season 10 - Qualifier",
+    "liquipediatier": "2",
+    "startdate": "2026-03-19 06:20:00",
+    "enddate": "2026-03-20 07:30:00",
+    "conditions": "[[pagename::MPL/Cambodia/Season_10/Qualifier]]",
+    "active": true
+  },
+  {
     "name": "sibol_national_team_selection_for_asian_games_2026",
     "wiki": "mobilelegends",
     "pagename": "SIBOL_National_Team_Selection/Asian_Games_2026",
@@ -8,7 +52,7 @@
     "startdate": "2026-03-14 03:30:00",
     "enddate": "2026-03-15 11:15:00",
     "conditions": "[[pagename::SIBOL_National_Team_Selection/Asian_Games_2026]]",
-    "active": false
+    "active": true
   },
   {
     "name": "mlbb_china_masters_season_2_qualifier",
@@ -19,7 +63,7 @@
     "startdate": "2026-03-05 21:00:00",
     "enddate": "2026-03-08 00:00:02",
     "conditions": "[[pagename::MLBB_China_Masters/Season_2/Closed_Qualifier]]",
-    "active": false
+    "active": true
   },
   {
     "name": "v_code_road_to_msl_season_3",
@@ -30,7 +74,7 @@
     "startdate": "2026-02-27 06:30:00",
     "enddate": "2026-03-01 06:30:00",
     "conditions": "[[pagename::V-Code/Road_To_MSL/Season_3/Playoffs]]",
-    "active": false
+    "active": true
   },
   {
     "name": "v_code_road_to_msl_season_3",
@@ -41,7 +85,7 @@
     "startdate": "2026-02-19 05:30:00",
     "enddate": "2026-02-25 09:30:00",
     "conditions": "[[pagename::V-Code/Road_To_MSL/Season_3/Swiss_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "m7_world_championship",
@@ -74,7 +118,7 @@
     "startdate": "2026-01-03 07:00:00",
     "enddate": "2026-01-06 11:45:00",
     "conditions": "[[pagename::M7_World_Championship/Wildcard]]",
-    "active": false
+    "active": true
   },
   {
     "name": "games_of_the_future_2025",
@@ -85,7 +129,7 @@
     "startdate": "2025-12-20 08:00:00",
     "enddate": "2025-12-23 14:00:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Playoffs]]",
-    "active": false
+    "active": true
   },
   {
     "name": "games_of_the_future_2025",
@@ -96,7 +140,7 @@
     "startdate": "2025-12-18 10:00:00",
     "enddate": "2025-12-19 15:45:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Group_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -107,7 +151,7 @@
     "startdate": "2025-12-17 08:00:00",
     "enddate": "2025-12-17 08:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Knockout_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -118,7 +162,7 @@
     "startdate": "2025-12-17 03:30:00",
     "enddate": "2025-12-17 03:30:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Knockout_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -129,7 +173,7 @@
     "startdate": "2025-12-14 03:30:00",
     "enddate": "2025-12-14 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Group_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -140,7 +184,7 @@
     "startdate": "2025-12-13 03:30:00",
     "enddate": "2025-12-13 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Group_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "m7_world_championship_japan_qualifier",

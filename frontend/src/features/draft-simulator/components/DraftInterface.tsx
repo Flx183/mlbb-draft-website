@@ -7,6 +7,7 @@ import { TIME_PER_ACTION, SLOT_COUNT } from "../constants/draft.ts";
 import { BanSlotsRow } from "./BanSlotsRow.tsx";
 import { DraftHeader } from "./DraftHeader.tsx";
 import { DraftControls } from "./DraftControls.tsx";
+import RecommendationBox  from "./RecommendationBox.tsx"
 import { PickSlotsColumn } from "./PickSlotsColumn.tsx";
 
 export function DraftInterface() {
@@ -18,6 +19,8 @@ export function DraftInterface() {
   const [redPicks, setRedPicks] = useState<Hero[]>([]);
   const [stepSelectionsCount, setStepSelectionsCount] = useState(0);
   const [hasDraftStarted, setHasDraftStarted] = useState(false);
+  const [recommendations, setRecommendations] = useState([]);
+  
 
   const [bannedHeroIds, setBannedHeroIds] = useState<
     Set<number>
@@ -191,35 +194,58 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* MAIN CONTENT AREA */}
-      <div className="flex-1 container mx-auto px-4 py-4 grid grid-cols-[180px_1fr_180px] gap-4 min-h-0">
-        {/* Blue Team Picks */}
-        <PickSlotsColumn
-          heroes={bluePicks}
-          currentAction={currentAction}
-          currentTeam={currentTeam}
-          side="blue"
-        />
-
-        {/* Hero Grid */}
-        <div className="min-h-0 overflow-y-auto custom-scrollbar">
-          <HeroGrid
-            heroes={heroes}
-            onHeroSelect={handleHeroSelect}
-            bannedHeroIds={bannedHeroIds}
-            pickedHeroIds={pickedHeroIds}
-            currentAction={currentAction}
-          />
-        </div>
-
-        <PickSlotsColumn
-          heroes={redPicks}
-          currentAction={currentAction}
-          currentTeam={currentTeam}
-          side="red"
-        />
-
-      </div>
+      <div className="flex-1 container mx-auto px-4 py-4 grid grid-cols-[180px_minmax(0,1fr)_180px] gap-4 min-h-0">
+  {/* LEFT SIDE */}
+  <div className="min-h-0 flex flex-col gap-4">
+    <div className="flex-1 min-h-0">
+      <PickSlotsColumn
+        heroes={bluePicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="blue"
+      />
     </div>
+
+    <div className="shrink-0">
+      <RecommendationBox
+        team="blue"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "blue"}
+      />
+    </div>
+  </div>
+
+  {/* CENTER */}
+  <div className="min-w-0 min-h-0 overflow-y-auto custom-scrollbar">
+    <HeroGrid
+      heroes={heroes}
+      onHeroSelect={handleHeroSelect}
+      bannedHeroIds={bannedHeroIds}
+      pickedHeroIds={pickedHeroIds}
+      currentAction={currentAction}
+    />
+  </div>
+
+  {/* RIGHT SIDE */}
+  <div className="min-h-0 flex flex-col gap-4">
+    <div className="flex-1 min-h-0">
+      <PickSlotsColumn
+        heroes={redPicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="red"
+      />
+    </div>
+
+    <div className="shrink-0">
+      <RecommendationBox
+        team="red"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "red"}
+      />
+    </div>
+  </div>
+</div>
+</div>
   );
 }

@@ -12,7 +12,7 @@ if __name__ == "__main__":
     load_dotenv()
     api_key = os.getenv("LIQUIPEDIA_API_KEY")
     today = date.today()
-    months = 1 # Change this for different ranges
+    months = 4 # Change this for different ranges
 
     tournaments = get_tournaments_by_date(
         api_key=api_key,

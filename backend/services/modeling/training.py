@@ -7,6 +7,7 @@ from typing import Any
 
 import pandas as pd
 from pandas.api.types import is_numeric_dtype
+from xgboost import XGBRanker
 
 from backend.services.common.file_utils import load_json
 
@@ -52,6 +53,8 @@ def chronological_split(
     test_df = df[~df[entity_column].isin(split_entities)].reset_index(drop=True)
 
     return train_df, test_df
+
+
 def rank_metrics(
     df: pd.DataFrame,
     query_column: str,
@@ -120,3 +123,90 @@ def sort_for_grouped_ranking(df: pd.DataFrame, query_column: str) -> pd.DataFram
 
 def query_group_sizes(df: pd.DataFrame, query_column: str) -> list[int]:
     return df.groupby(query_column, sort=False).size().tolist()
+
+
+def ranker_prediction_metrics(
+    df: pd.DataFrame,
+    scores: list[float],
+    query_column: str,
+    label_column: str,
+) -> dict[str, float]:
+    prediction_frame = df[[query_column, label_column]].copy()
+    prediction_frame["score"] = list(scores)
+    return rank_metrics(prediction_frame, query_column, label_column, "score")
+
+
+def tune_xgb_ranker_params(
+    train_df: pd.DataFrame,
+    columns: list[str],
+    label_column: str,
+    query_column: str,
+    candidate_params: list[dict[str, Any]],
+) -> tuple[dict[str, Any], dict[str, float]]:
+    if train_df.empty:
+        raise ValueError("Cannot tune XGBoost ranker parameters with an empty training frame.")
+
+    if len(candidate_params) == 0:
+        raise ValueError("Candidate parameter list must not be empty.")
+
+    fit_df, validation_df = chronological_split(train_df, entity_column=query_column)
+    if fit_df.empty or validation_df.empty:
+        fallback_params = candidate_params[0].copy()
+        return fallback_params, {
+            "ndcg_at_3": 0.0,
+            "top1_hit_rate": 0.0,
+            "top3_hit_rate": 0.0,
+        }
+
+    fit_sorted = sort_for_grouped_ranking(fit_df, query_column)
+    validation_sorted = sort_for_grouped_ranking(validation_df, query_column)
+
+    best_params: dict[str, Any] | None = None
+    best_metrics: dict[str, float] | None = None
+    best_score = float("-inf")
+
+    for candidate in candidate_params:
+        model = XGBRanker(
+            objective="rank:pairwise",
+            eval_metric="ndcg@3",
+            random_state=42,
+            tree_method="hist",
+            **candidate,
+        )
+        model.fit(
+            fit_sorted[columns].fillna(0.0),
+            fit_sorted[label_column],
+            group=query_group_sizes(fit_sorted, query_column),
+        )
+        validation_scores = model.predict(validation_sorted[columns].fillna(0.0)).tolist()
+        metrics = ranker_prediction_metrics(
+            validation_sorted,
+            validation_scores,
+            query_column=query_column,
+            label_column=label_column,
+        )
+        ndcg_at_3 = float(metrics["ndcg_at_3"])
+        top3_hit_rate = float(metrics["top3_hit_rate"])
+        top1_hit_rate = float(metrics["top1_hit_rate"])
+        comparison_key = (ndcg_at_3, top3_hit_rate, top1_hit_rate)
+
+        if best_metrics is None:
+            best_score = comparison_key[0]
+            best_metrics = metrics
+            best_params = candidate.copy()
+            continue
+
+        best_comparison_key = (
+            float(best_metrics["ndcg_at_3"]),
+            float(best_metrics["top3_hit_rate"]),
+            float(best_metrics["top1_hit_rate"]),
+        )
+        if comparison_key > best_comparison_key:
+            best_score = comparison_key[0]
+            best_metrics = metrics
+            best_params = candidate.copy()
+
+    if best_params is None or best_metrics is None:
+        raise RuntimeError("Failed to tune XGBoost ranker parameters.")
+
+    return best_params, best_metrics

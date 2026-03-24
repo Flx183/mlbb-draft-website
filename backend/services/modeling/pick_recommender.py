@@ -29,10 +29,12 @@ from backend.services.modeling.pick_constants import (
 from backend.services.modeling.pick_order_profiles import (
     PickOrderProfile,
     resolve_pick_order_profile,
+    score_pick_order_profile,
+    weighted_signal_average_for_profile,
 )
 from backend.services.modeling.pick_signal_model import (
     build_pick_signal_frame,
-    default_pick_signal_weights,
+    pick_signal_prior_score,
 )
 
 PROCESSED_STATS_ABS_PATH = ROOT_DIR / PROCESSED_STATS_PATH
@@ -191,48 +193,52 @@ def _score_reason_flags(
     pool_frame: pd.DataFrame,
     order_profile: PickOrderProfile,
 ) -> list[str]:
-    reasons: list[str] = []
+    del pool_frame
 
-    def is_top_quantile(column_name: str, quantile: float = 0.9) -> bool:
-        if column_name not in pool_frame or pool_frame.empty:
-            return False
-        threshold = float(pool_frame[column_name].quantile(quantile))
-        return float(row.get(column_name, 0.0)) >= threshold and float(row.get(column_name, 0.0)) > 0
+    contribution_specs = [
+        (
+            "prior_score",
+            float(order_profile.base_score_weight) * float(row.get("prior_score", 0.0)),
+            "best overall fit in the trained ranker",
+        ),
+        (
+            "secure_power_signal",
+            float(order_profile.secure_power_weight) * float(row.get("secure_power_signal", 0.0)),
+            "learned profile values secure power in this slot",
+        ),
+        (
+            "flexibility_signal",
+            float(order_profile.flexibility_weight) * float(row.get("flexibility_signal", 0.0)),
+            "learned profile rewards flexibility here",
+        ),
+        (
+            "ally_pick_synergy_signal",
+            float(order_profile.synergy_weight) * float(row.get("ally_pick_synergy_signal", 0.0)),
+            "learned profile values synergy with our revealed picks",
+        ),
+        (
+            "counter_vs_enemy_picks_signal",
+            float(order_profile.counter_weight) * float(row.get("counter_vs_enemy_picks_signal", 0.0)),
+            "learned profile values counterplay into the revealed enemy draft",
+        ),
+        (
+            "ally_role_completion_signal",
+            float(order_profile.role_completion_weight) * float(row.get("ally_role_completion_signal", 0.0)),
+            "learned profile values role completion in this slot",
+        ),
+    ]
 
-    if order_profile.id == "opener":
-        if is_top_quantile("secure_power_signal"):
-            reasons.append("safe early priority for this pick window")
-        if is_top_quantile("flexibility_signal"):
-            reasons.append("keeps the draft flexible early")
-    elif order_profile.id == "bridge":
-        if is_top_quantile("ally_pick_synergy_signal"):
-            reasons.append("extends our first-phase combo")
-        if is_top_quantile("counter_vs_enemy_picks_signal"):
-            reasons.append("answers revealed enemy pressure")
-    elif order_profile.id == "setup":
-        if is_top_quantile("counter_vs_enemy_picks_signal"):
-            reasons.append("sets up the second phase into enemy reveals")
-        if is_top_quantile("ally_role_completion_signal"):
-            reasons.append("stabilizes a missing role before final picks")
-    elif order_profile.id == "closer":
-        if is_top_quantile("ally_role_completion_signal"):
-            reasons.append("strong late role completion")
-        if is_top_quantile("counter_vs_enemy_picks_signal"):
-            reasons.append("punishes the nearly finished enemy draft")
-
-    if is_top_quantile("ally_pick_synergy_signal"):
-        reasons.append("fits strongly with our revealed picks")
-    if is_top_quantile("counter_vs_enemy_picks_signal"):
-        reasons.append("pressures revealed enemy picks")
-    if is_top_quantile("ally_role_completion_signal"):
-        reasons.append("cleanly fills our missing role")
-    if is_top_quantile("secure_power_signal"):
-        reasons.append("high overall hero power")
-    if is_top_quantile("flexibility_signal"):
-        reasons.append("keeps our draft flexible")
-
+    reasons = [
+        reason
+        for _, contribution, reason in sorted(
+            contribution_specs,
+            key=lambda item: item[1],
+            reverse=True,
+        )
+        if contribution > 0.0
+    ]
     if not reasons:
-        reasons.append("best overall score for the current pick state")
+        reasons = ["best overall score for the current pick state"]
 
     deduped_reasons: list[str] = []
     for reason in reasons:
@@ -242,17 +248,8 @@ def _score_reason_flags(
     return deduped_reasons[:3]
 
 
-def _heuristic_prior_score(frame: pd.DataFrame) -> pd.Series:
-    defaults = default_pick_signal_weights()
-    weights = defaults["positive_signal_weights"]
-    return (
-        float(weights["secure_power_signal"]) * frame["secure_power_signal"]
-        + float(weights["flexibility_signal"]) * frame["flexibility_signal"]
-        + float(weights["ally_pick_synergy_signal"]) * frame["ally_pick_synergy_signal"]
-        + float(weights["counter_vs_enemy_picks_signal"]) * frame["counter_vs_enemy_picks_signal"]
-        + float(weights["ally_role_completion_signal"]) * frame["ally_role_completion_signal"]
-        - float(defaults["redundancy_penalty_weight"]) * frame["redundancy_penalty"]
-    )
+def _trained_signal_prior_score(frame: pd.DataFrame) -> pd.Series:
+    return pick_signal_prior_score(frame)
 
 
 def _context_sort_frame(
@@ -272,25 +269,9 @@ def _context_sort_frame(
             "ally_role_completion_signal",
         ]
     ].max(axis=1)
-    weighted_signal_sum = (
-        order_profile.secure_power_weight * scored["secure_power_signal"]
-        + order_profile.flexibility_weight * scored["flexibility_signal"]
-        + order_profile.synergy_weight * scored["ally_pick_synergy_signal"]
-        + order_profile.counter_weight * scored["counter_vs_enemy_picks_signal"]
-        + order_profile.role_completion_weight * scored["ally_role_completion_signal"]
-    )
-    total_positive_weight = (
-        order_profile.secure_power_weight
-        + order_profile.flexibility_weight
-        + order_profile.synergy_weight
-        + order_profile.counter_weight
-        + order_profile.role_completion_weight
-    )
-    scored["context_support"] = weighted_signal_sum / max(total_positive_weight, 1e-8)
-    scored["order_adjustment"] = (
-        weighted_signal_sum - order_profile.redundancy_penalty_weight * scored["redundancy_penalty"]
-    )
-    scored["final_score"] = order_profile.base_score_weight * scored["prior_score"] + scored["order_adjustment"]
+    scored["context_support"] = weighted_signal_average_for_profile(scored, order_profile)
+    scored["final_score"] = score_pick_order_profile(scored, order_profile)
+    scored["order_adjustment"] = scored["final_score"] - scored["prior_score"]
 
     return scored.sort_values(
         by=[
@@ -375,9 +356,9 @@ def recommend_next_picks(
         base_model_name = "pick_xgb_ranker_global"
     except (FileNotFoundError, ValueError):
         ranker_frame = build_pick_signal_frame(feature_frame)
-        prior_scores = _heuristic_prior_score(ranker_frame).tolist()
+        prior_scores = _trained_signal_prior_score(ranker_frame).tolist()
         base_model_source = "fallback"
-        base_model_name = "heuristic_pick_prior_v1"
+        base_model_name = "trained_pick_signal_prior_v1"
 
     feature_frame = build_pick_signal_frame(feature_frame)
     feature_frame["prior_score"] = prior_scores

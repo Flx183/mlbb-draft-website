@@ -1,17 +1,24 @@
 from __future__ import annotations
 
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterator
 
+import pandas as pd
+
 from backend.services.common.file_utils import load_json
 from backend.services.modeling.ban_constants import BAN_SEQUENCE
+from backend.services.modeling.feature_engineering_profile import (
+    FeatureEngineeringProfile,
+    load_feature_engineering_profile,
+)
 from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
     build_ban_candidate_feature_row,
     build_hero_feature_table,
     build_pick_candidate_feature_row,
 )
-from backend.services.modeling.pick_signal_model import build_pick_signal_row
+from backend.services.modeling.pick_signal_model import ALL_SIGNAL_COLUMNS, build_pick_signal_frame
 
 RAW_TOURNAMENTS_DIR = Path("backend/data/raw/tournaments")
 
@@ -21,6 +28,13 @@ def _extract_hero_names(items: list[dict[str, Any]]) -> list[str]:
 
 
 def _iter_games(raw_dir: Path = RAW_TOURNAMENTS_DIR) -> Iterator[dict[str, Any]]:
+    for game_row in _load_games(raw_dir):
+        yield dict(game_row)
+
+
+@lru_cache(maxsize=4)
+def _load_games(raw_dir: Path = RAW_TOURNAMENTS_DIR) -> tuple[dict[str, Any], ...]:
+    rows: list[dict[str, Any]] = []
     for tournament_path in sorted(raw_dir.glob("*.json")):
         tournament_data = load_json(tournament_path)
         if not isinstance(tournament_data, dict):
@@ -36,23 +50,26 @@ def _iter_games(raw_dir: Path = RAW_TOURNAMENTS_DIR) -> Iterator[dict[str, Any]]
             red_team_name = series.get("red_team_name")
 
             for game_index, game in enumerate(series.get("games", []), start=1):
-                yield {
-                    "source_file": tournament_path.name,
-                    "tournament": tournament_name,
-                    "pagename": pagename,
-                    "series_index": series_index,
-                    "game_index": game_index,
-                    "date": series_date,
-                    "patch": series_patch,
-                    "blue_team_name": blue_team_name,
-                    "red_team_name": red_team_name,
-                    "game_no": game.get("game_no"),
-                    "winner": game.get("winner"),
-                    "blue_picks": _extract_hero_names(game.get("blue_team", [])),
-                    "red_picks": _extract_hero_names(game.get("red_team", [])),
-                    "blue_bans": _extract_hero_names(game.get("blue_bans", [])),
-                    "red_bans": _extract_hero_names(game.get("red_bans", [])),
-                }
+                rows.append(
+                    {
+                        "source_file": tournament_path.name,
+                        "tournament": tournament_name,
+                        "pagename": pagename,
+                        "series_index": series_index,
+                        "game_index": game_index,
+                        "date": series_date,
+                        "patch": series_patch,
+                        "blue_team_name": blue_team_name,
+                        "red_team_name": red_team_name,
+                        "game_no": game.get("game_no"),
+                        "winner": game.get("winner"),
+                        "blue_picks": _extract_hero_names(game.get("blue_team", [])),
+                        "red_picks": _extract_hero_names(game.get("red_team", [])),
+                        "blue_bans": _extract_hero_names(game.get("blue_bans", [])),
+                        "red_bans": _extract_hero_names(game.get("red_bans", [])),
+                    }
+                )
+    return tuple(rows)
 
 
 def _game_identifier(game_row: dict[str, Any]) -> str:
@@ -65,8 +82,10 @@ def _game_identifier(game_row: dict[str, Any]) -> str:
 def build_ban_dataset(
     processed_stats_path: Path = PROCESSED_STATS_PATH,
     raw_dir: Path = RAW_TOURNAMENTS_DIR,
+    feature_profile: FeatureEngineeringProfile | None = None,
 ) -> dict[str, Any]:
-    hero_table = build_hero_feature_table(processed_stats_path)
+    resolved_feature_profile = feature_profile or load_feature_engineering_profile()
+    hero_table = build_hero_feature_table(processed_stats_path, feature_profile=resolved_feature_profile)
     all_heroes = sorted(hero_table["heroes"].keys())
 
     rows: list[dict[str, Any]] = []
@@ -126,6 +145,13 @@ def build_ban_dataset(
             "model_target": "label_is_ban",
             "source_processed_stats": str(processed_stats_path),
             "source_raw_dir": str(raw_dir),
+            "feature_engineering_profile": {
+                "adjusted_win_rate_smoothing_games": int(
+                    resolved_feature_profile["adjusted_win_rate_smoothing_games"]
+                ),
+                "flexibility_role_threshold": float(resolved_feature_profile["flexibility_role_threshold"]),
+                "pair_prior_games": int(resolved_feature_profile["pair_prior_games"]),
+            },
             "note": (
                 "Ban dataset is order-sensitive on real ban slots and prior bans. "
                 "It does not include pick-context features because pick order is unavailable."
@@ -139,8 +165,10 @@ def build_pick_fit_dataset(
     processed_stats_path: Path = PROCESSED_STATS_PATH,
     raw_dir: Path = RAW_TOURNAMENTS_DIR,
     signals_only: bool = False,
+    feature_profile: FeatureEngineeringProfile | None = None,
 ) -> dict[str, Any]:
-    hero_table = build_hero_feature_table(processed_stats_path)
+    resolved_feature_profile = feature_profile or load_feature_engineering_profile()
+    hero_table = build_hero_feature_table(processed_stats_path, feature_profile=resolved_feature_profile)
     processed_stats = load_json(processed_stats_path)
     if not isinstance(processed_stats, dict):
         raise ValueError(f"Expected processed hero stats dict at {processed_stats_path}")
@@ -179,8 +207,8 @@ def build_pick_fit_dataset(
                         red_bans=red_bans,
                         hero_table=hero_table,
                         complete_stats=processed_stats,
+                        feature_profile=resolved_feature_profile,
                     )
-                    row_features = build_pick_signal_row(feature_row) if signals_only else feature_row
                     rows.append(
                         {
                             "query_id": query_id,
@@ -194,9 +222,27 @@ def build_pick_fit_dataset(
                             "actual_pick": actual_pick,
                             "candidate_hero": candidate_hero,
                             "label_is_pick_fit": 1 if candidate_hero == actual_pick else 0,
-                            **row_features,
+                            **feature_row,
                         }
                     )
+
+    if signals_only and rows:
+        raw_frame = pd.DataFrame(rows)
+        signal_frame = build_pick_signal_frame(raw_frame, query_column="query_id")
+        base_columns = [
+            "query_id",
+            "game_id",
+            "date",
+            "patch",
+            "tournament",
+            "source_file",
+            "team",
+            "slot_index",
+            "actual_pick",
+            "candidate_hero",
+            "label_is_pick_fit",
+        ]
+        rows = signal_frame[base_columns + list(ALL_SIGNAL_COLUMNS)].to_dict(orient="records")
 
     return {
         "metadata": {
@@ -204,6 +250,13 @@ def build_pick_fit_dataset(
             "model_target": "label_is_pick_fit",
             "source_processed_stats": str(processed_stats_path),
             "source_raw_dir": str(raw_dir),
+            "feature_engineering_profile": {
+                "adjusted_win_rate_smoothing_games": int(
+                    resolved_feature_profile["adjusted_win_rate_smoothing_games"]
+                ),
+                "flexibility_role_threshold": float(resolved_feature_profile["flexibility_role_threshold"]),
+                "pair_prior_games": int(resolved_feature_profile["pair_prior_games"]),
+            },
             "note": (
                 "Pick-fit dataset is order-agnostic. Each query removes one actual picked hero from the final team "
                 "and asks which legal hero best completes the remaining four-hero allied core into the full enemy draft. "

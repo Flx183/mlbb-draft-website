@@ -6,7 +6,12 @@ from pathlib import Path
 from typing import Any
 
 from backend.services.common.file_utils import load_json
-from backend.services.common.hero_grade_utils import MANUAL_WEIGHTS, percentile_ranks
+from backend.services.common.hero_grade_utils import percentile_ranks
+from backend.services.modeling.feature_engineering_profile import (
+    FeatureEngineeringProfile,
+    load_feature_engineering_profile,
+)
+from backend.services.modeling.hero_power_model import load_hero_power_profile, compute_hero_power
 
 PROCESSED_STATS_PATH = Path("backend/data/processed/complete_hero_stats.json")
 STANDARD_ROLES = ("EXP", "Jungle", "Mid", "Gold", "Roam")
@@ -23,7 +28,7 @@ def _smoothed_win_rate(
     wins: float,
     picks: int,
     global_win_rate: float,
-    smoothing_games: int = 8,
+    smoothing_games: int,
 ) -> float:
     if picks <= 0:
         return global_win_rate
@@ -59,6 +64,12 @@ def _load_complete_stats(path: Path = PROCESSED_STATS_PATH) -> dict[str, Any]:
     if not isinstance(data, dict) or "heroes" not in data:
         raise ValueError(f"Expected processed hero stats at {path}")
     return data
+
+
+def _resolve_feature_engineering_profile(
+    feature_profile: FeatureEngineeringProfile | None = None,
+) -> FeatureEngineeringProfile:
+    return feature_profile or load_feature_engineering_profile()
 
 
 def _global_game_count(heroes: dict[str, dict[str, Any]]) -> int:
@@ -124,9 +135,14 @@ def _ban_slot_features(stats: dict[str, Any], total_games: int) -> dict[str, flo
     }
 
 
-def build_hero_feature_table(path: Path = PROCESSED_STATS_PATH) -> dict[str, Any]:
+def build_hero_feature_table(
+    path: Path = PROCESSED_STATS_PATH,
+    feature_profile: FeatureEngineeringProfile | None = None,
+) -> dict[str, Any]:
     complete_stats = _load_complete_stats(path)
     heroes: dict[str, dict[str, Any]] = complete_stats["heroes"]
+    hero_power_profile = load_hero_power_profile()
+    resolved_feature_profile = _resolve_feature_engineering_profile(feature_profile)
 
     total_games = _global_game_count(heroes)
     global_win_rate = _global_win_rate(heroes)
@@ -149,12 +165,17 @@ def build_hero_feature_table(path: Path = PROCESSED_STATS_PATH) -> dict[str, Any
             if picked > 0
         ]
         flexibility_score = _normalized_entropy(role_probabilities, len(STANDARD_ROLES))
-        flexibility_roles = sum(1 for probability in role_probabilities if probability >= 0.15)
+        flexibility_roles = sum(
+            1
+            for probability in role_probabilities
+            if probability >= float(resolved_feature_profile["flexibility_role_threshold"])
+        )
 
         adjusted_win_rate = _smoothed_win_rate(
             wins=wins,
             picks=picked,
             global_win_rate=global_win_rate,
+            smoothing_games=int(resolved_feature_profile["adjusted_win_rate_smoothing_games"]),
         )
         ban_slot_features = _ban_slot_features(stats, total_games)
 
@@ -186,10 +207,11 @@ def build_hero_feature_table(path: Path = PROCESSED_STATS_PATH) -> dict[str, Any
         ban_rate_ranks,
         adjusted_win_rate_ranks,
     ):
-        hero_power = (
-            MANUAL_WEIGHTS["pick_rate"] * pick_rank
-            + MANUAL_WEIGHTS["ban_rate"] * ban_rank
-            + MANUAL_WEIGHTS["adjusted_win_rate"] * win_rank
+        hero_power = compute_hero_power(
+            pick_rate_rank=pick_rank,
+            ban_rate_rank=ban_rank,
+            adjusted_win_rate_rank=win_rank,
+            profile=hero_power_profile,
         )
 
         hero_table[row["hero"]] = {
@@ -244,8 +266,8 @@ def _pair_score(
     hero_a: str,
     hero_b: str,
     hero_payloads: dict[str, Any],
+    prior_games: int,
     default_rate: float = 0.5,
-    prior_games: int = 4,
 ) -> tuple[float, int]:
     record = (
         hero_payloads.get(hero_a, {}).get(matrix_name, {}).get(hero_b)
@@ -462,13 +484,21 @@ def summarize_candidate_synergy(
     revealed_heroes: list[str],
     complete_stats: dict[str, Any],
     prefix: str,
+    feature_profile: FeatureEngineeringProfile | None = None,
 ) -> dict[str, float]:
     heroes = complete_stats["heroes"]
+    resolved_feature_profile = _resolve_feature_engineering_profile(feature_profile)
     scores: list[float] = []
     games: list[float] = []
 
     for revealed_hero in revealed_heroes:
-        score, sample_games = _pair_score("synergy_matrix", candidate_hero, revealed_hero, heroes)
+        score, sample_games = _pair_score(
+            "synergy_matrix",
+            candidate_hero,
+            revealed_hero,
+            heroes,
+            prior_games=int(resolved_feature_profile["pair_prior_games"]),
+        )
         scores.append(score)
         games.append(float(sample_games))
 
@@ -486,13 +516,21 @@ def summarize_candidate_counter(
     revealed_heroes: list[str],
     complete_stats: dict[str, Any],
     prefix: str,
+    feature_profile: FeatureEngineeringProfile | None = None,
 ) -> dict[str, float]:
     heroes = complete_stats["heroes"]
+    resolved_feature_profile = _resolve_feature_engineering_profile(feature_profile)
     scores: list[float] = []
     games: list[float] = []
 
     for revealed_hero in revealed_heroes:
-        score, sample_games = _pair_score("counter_matrix", candidate_hero, revealed_hero, heroes)
+        score, sample_games = _pair_score(
+            "counter_matrix",
+            candidate_hero,
+            revealed_hero,
+            heroes,
+            prior_games=int(resolved_feature_profile["pair_prior_games"]),
+        )
         scores.append(score)
         games.append(float(sample_games))
 
@@ -604,7 +642,9 @@ def build_pick_candidate_feature_row(
     red_bans: list[str],
     hero_table: dict[str, Any],
     complete_stats: dict[str, Any],
+    feature_profile: FeatureEngineeringProfile | None = None,
 ) -> dict[str, float]:
+    resolved_feature_profile = _resolve_feature_engineering_profile(feature_profile)
     candidate = _hero_features_or_default(candidate_hero, hero_table)
     all_bans = list(dict.fromkeys([*blue_bans, *red_bans]))
     our_missing_roles = infer_missing_roles(our_picks, hero_table) if our_picks else []
@@ -651,6 +691,7 @@ def build_pick_candidate_feature_row(
             our_picks,
             complete_stats,
             "ally_pick_synergy",
+            feature_profile=resolved_feature_profile,
         )
     )
     features.update(
@@ -659,6 +700,7 @@ def build_pick_candidate_feature_row(
             enemy_picks,
             complete_stats,
             "counter_vs_enemy_picks",
+            feature_profile=resolved_feature_profile,
         )
     )
     features.update(

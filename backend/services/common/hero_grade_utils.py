@@ -3,12 +3,12 @@ from typing import Optional
 
 
 GRADE_ORDER = ["D", "C", "B", "A", "S"]
-MANUAL_WEIGHTS = {
-    "pick_rate": 0.35,
-    "ban_rate": 0.40,
-    "adjusted_win_rate": 0.25,
-}
+FEATURE_NAMES = ("pick_rate", "ban_rate", "adjusted_win_rate")
 
+
+def equal_weights() -> dict[str, float]:
+    uniform_weight = 1.0 / len(FEATURE_NAMES)
+    return {feature_name: uniform_weight for feature_name in FEATURE_NAMES}
 
 def parse_percent(value: str) -> Optional[float]:
     if value is None:
@@ -121,10 +121,9 @@ def correlation(x_values: list[float], y_values: list[float]) -> float:
 
 
 def critic_weights(matrix: list[list[float]]) -> dict[str, float]:
-    feature_names = ["pick_rate", "ban_rate", "adjusted_win_rate"]
     normalized = min_max_normalize(matrix)
     if not normalized:
-        return MANUAL_WEIGHTS.copy()
+        return equal_weights()
 
     columns = list(zip(*normalized))
     scores: list[float] = []
@@ -137,19 +136,18 @@ def critic_weights(matrix: list[list[float]]) -> dict[str, float]:
 
     total_score = sum(scores)
     if total_score == 0:
-        return MANUAL_WEIGHTS.copy()
+        return equal_weights()
 
     return {
         feature_name: score / total_score
-        for feature_name, score in zip(feature_names, scores)
+        for feature_name, score in zip(FEATURE_NAMES, scores)
     }
 
 
 def entropy_weights(matrix: list[list[float]]) -> dict[str, float]:
-    feature_names = ["pick_rate", "ban_rate", "adjusted_win_rate"]
     normalized = min_max_normalize(matrix)
     if not normalized:
-        return MANUAL_WEIGHTS.copy()
+        return equal_weights()
 
     columns = list(zip(*normalized))
     feature_scores: list[float] = []
@@ -166,17 +164,17 @@ def entropy_weights(matrix: list[list[float]]) -> dict[str, float]:
 
     total_score = sum(feature_scores)
     if total_score == 0:
-        return MANUAL_WEIGHTS.copy()
+        return equal_weights()
 
     return {
         feature_name: score / total_score
-        for feature_name, score in zip(feature_names, feature_scores)
+        for feature_name, score in zip(FEATURE_NAMES, feature_scores)
     }
 
 
 def resolve_weights(matrix: list[list[float]], weighting_method: str) -> dict[str, float]:
-    if weighting_method == "manual":
-        return MANUAL_WEIGHTS.copy()
+    if weighting_method in {"manual", "equal"}:
+        return equal_weights()
     if weighting_method == "entropy":
         return entropy_weights(matrix)
     return critic_weights(matrix)

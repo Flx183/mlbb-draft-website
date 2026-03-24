@@ -12,6 +12,14 @@ if str(ROOT_DIR) not in sys.path:
 
 from backend.services.common.file_utils import save_json
 from backend.services.modeling.dataset_builder import build_ban_dataset
+from backend.services.modeling.feature_engineering_profile import (
+    FeatureEngineeringProfile,
+    load_feature_engineering_profile,
+)
+from backend.services.modeling.hero_power_model import (
+    HERO_POWER_PROFILE_PATH,
+    build_current_hero_power_profile,
+)
 from backend.services.modeling.ban_training import (
     attach_scores,
     build_ban_feature_columns,
@@ -23,12 +31,70 @@ from backend.services.modeling.training import (
     load_dataset_frame,
     query_group_sizes,
     sort_for_grouped_ranking,
+    tune_xgb_ranker_params,
 )
 
 DATASET_PATH = Path("backend/data/modeling/ban_dataset.json")
 OUTPUT_DIR = Path("backend/data/modeling/models")
 RAW_TOURNAMENTS_DIR = Path("backend/data/raw/tournaments")
 PROCESSED_DIR = Path("backend/data/processed")
+
+BAN_RANKER_CANDIDATE_PARAMS = [
+    {
+        "n_estimators": 220,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.80,
+    },
+    {
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.90,
+        "colsample_bytree": 0.80,
+    },
+    {
+        "n_estimators": 360,
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "subsample": 0.90,
+        "colsample_bytree": 0.85,
+    },
+    {
+        "n_estimators": 320,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.90,
+    },
+    {
+        "n_estimators": 420,
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "subsample": 0.95,
+        "colsample_bytree": 0.85,
+    },
+]
+
+
+def _feature_profile_signature(profile: FeatureEngineeringProfile) -> dict[str, float]:
+    return {
+        "adjusted_win_rate_smoothing_games": float(profile["adjusted_win_rate_smoothing_games"]),
+        "flexibility_role_threshold": round(float(profile["flexibility_role_threshold"]), 4),
+        "pair_prior_games": float(profile["pair_prior_games"]),
+    }
+
+
+def _dataset_matches_feature_profile(metadata: dict[str, object], profile: FeatureEngineeringProfile) -> bool:
+    payload = metadata.get("feature_engineering_profile", {})
+    if not isinstance(payload, dict):
+        return False
+    return {
+        "adjusted_win_rate_smoothing_games": float(payload.get("adjusted_win_rate_smoothing_games", -1)),
+        "flexibility_role_threshold": round(float(payload.get("flexibility_role_threshold", -1.0)), 4),
+        "pair_prior_games": float(payload.get("pair_prior_games", -1)),
+    } == _feature_profile_signature(profile)
 
 
 if __name__ == "__main__":
@@ -54,11 +120,17 @@ if __name__ == "__main__":
             "Refreshed processed stats from "
             f"{raw_file_count} raw tournament file{'s' if raw_file_count != 1 else ''}."
         )
+    feature_profile = load_feature_engineering_profile()
 
     if args.reuse_dataset and DATASET_PATH.exists():
-        print(f"Reusing existing ban dataset at {DATASET_PATH}")
+        metadata, _ = load_dataset_frame(DATASET_PATH)
+        if _dataset_matches_feature_profile(metadata, feature_profile):
+            print(f"Reusing existing ban dataset at {DATASET_PATH}")
+        else:
+            save_json(DATASET_PATH, build_ban_dataset(feature_profile=feature_profile))
+            print(f"Rebuilt ban dataset from raw tournaments at {DATASET_PATH} to match the tuned feature profile.")
     else:
-        save_json(DATASET_PATH, build_ban_dataset())
+        save_json(DATASET_PATH, build_ban_dataset(feature_profile=feature_profile))
         print(f"Rebuilt ban dataset from raw tournaments at {DATASET_PATH}")
 
     metadata, df = load_dataset_frame(DATASET_PATH)
@@ -84,16 +156,19 @@ if __name__ == "__main__":
     train_sorted = sort_for_grouped_ranking(train_df, "query_id")
     test_sorted = sort_for_grouped_ranking(test_df, "query_id")
 
+    tuned_params, validation_metrics = tune_xgb_ranker_params(
+        train_df=train_df,
+        columns=columns,
+        label_column="label_is_ban",
+        query_column="query_id",
+        candidate_params=BAN_RANKER_CANDIDATE_PARAMS,
+    )
     xgb_ranker = XGBRanker(
-        n_estimators=300,
-        max_depth=4,
-        learning_rate=0.05,
-        subsample=0.9,
-        colsample_bytree=0.8,
         objective="rank:pairwise",
         eval_metric="ndcg@3",
         random_state=42,
         tree_method="hist",
+        **tuned_params,
     )
     xgb_ranker.fit(
         train_sorted[columns].fillna(0.0),
@@ -125,6 +200,8 @@ if __name__ == "__main__":
         "test_rows": int(len(test_df)),
         "feature_count": len(columns),
         "features": columns,
+        "tuned_ranker_params": tuned_params,
+        "validation_metrics": validation_metrics,
         "top_global_ranker_features": [
             {
                 "feature": feature_name,
@@ -144,7 +221,9 @@ if __name__ == "__main__":
 
     xgb_ranker.save_model(OUTPUT_DIR / "ban_xgb_ranker_global.json")
     save_json(OUTPUT_DIR / "ban_ranker_report.json", report)
+    save_json(HERO_POWER_PROFILE_PATH, build_current_hero_power_profile())
 
     best_global = report["models"]["xgb_ranker_global"]["ranking"]["top3_hit_rate"]
     print(f"Saved ban ranker report to {OUTPUT_DIR / 'ban_ranker_report.json'}")
+    print(f"Saved hero power profile to {HERO_POWER_PROFILE_PATH}")
     print(f"Global ranker top-3 hit rate: {best_global:.4f}")

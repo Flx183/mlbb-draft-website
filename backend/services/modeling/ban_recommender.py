@@ -8,7 +8,7 @@ import sys
 from typing import Any
 
 import pandas as pd
-from xgboost import DMatrix, XGBRanker
+from xgboost import XGBRanker
 
 ROOT_DIR = Path(__file__).resolve().parents[3]
 if str(ROOT_DIR) not in sys.path:
@@ -30,58 +30,6 @@ MODEL_DIR = ROOT_DIR / "backend/data/modeling/models"
 RANKER_REPORT_PATH = MODEL_DIR / "ban_ranker_report.json"
 GLOBAL_RANKER_PATH = MODEL_DIR / "ban_xgb_ranker_global.json"
 PROCESSED_STATS_ABS_PATH = ROOT_DIR / PROCESSED_STATS_PATH
-
-BAN_REASON_GROUPS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
-    (
-        "slot_fit_contribution",
-        "strong fit for this exact ban slot",
-        (
-            "candidate_current_slot_share",
-            "candidate_average_ban_order",
-            "candidate_ban_slot_mode",
-            "candidate_slot_distance_from_mean",
-            "candidate_ban_slot_",
-        ),
-    ),
-    (
-        "phase_priority_contribution",
-        "historically prioritized in this ban phase",
-        (
-            "candidate_phase_fit_share",
-            "candidate_first_phase_ban_share",
-            "candidate_second_phase_ban_share",
-        ),
-    ),
-    (
-        "contest_power_contribution",
-        "strong global contest and power profile",
-        (
-            "candidate_ban_rate",
-            "candidate_pick_rate",
-            "candidate_hero_power",
-            "candidate_adjusted_win_rate",
-            "candidate_raw_win_rate",
-        ),
-    ),
-    (
-        "ally_ban_pattern_contribution",
-        "fits the trained allied-ban pattern",
-        ("ally_prior_bans",),
-    ),
-    (
-        "enemy_ban_pattern_contribution",
-        "fits the trained enemy-ban pattern",
-        ("enemy_prior_bans",),
-    ),
-    (
-        "flexibility_contribution",
-        "useful flexibility profile for this ban state",
-        (
-            "candidate_hero_flexibility",
-            "candidate_flexibility_roles",
-        ),
-    ),
-)
 
 
 def _normalize_team(team: str) -> str:
@@ -193,18 +141,33 @@ def _legal_ban_candidates(
     return [hero_name for hero_name in sorted(hero_table["heroes"].keys()) if hero_name not in unavailable]
 
 
-def _score_reason_flags(row: dict[str, Any]) -> list[str]:
-    reasons = [
-        label
-        for contribution_column, label, _ in sorted(
-            BAN_REASON_GROUPS,
-            key=lambda item: float(row.get(item[0], 0.0)),
-            reverse=True,
-        )
-        if float(row.get(contribution_column, 0.0)) > 0.0
-    ]
+def _score_reason_flags(row: dict[str, Any], pool_frame: pd.DataFrame) -> list[str]:
+    reasons: list[str] = []
+
+    def is_top_quantile(column_name: str, quantile: float = 0.9) -> bool:
+        if column_name not in pool_frame or pool_frame.empty:
+            return False
+        threshold = float(pool_frame[column_name].quantile(quantile))
+        return float(row.get(column_name, 0.0)) >= threshold and float(row.get(column_name, 0.0)) > 0
+
+    if is_top_quantile("candidate_current_slot_share"):
+        reasons.append("strong fit for this exact ban slot")
+    if is_top_quantile("candidate_phase_fit_share"):
+        reasons.append("historically prioritized in this ban phase")
+    if is_top_quantile("candidate_ban_rate"):
+        reasons.append("high global ban contest rate")
+    if is_top_quantile("candidate_hero_power"):
+        reasons.append("high overall hero power")
+    if is_top_quantile("enemy_pick_synergy_synergy_score_max"):
+        reasons.append("fits strongly with revealed enemy picks")
+    if is_top_quantile("counter_vs_our_picks_counter_score_max"):
+        reasons.append("threatens our revealed picks if left open")
+    if is_top_quantile("enemy_role_role_completion_max"):
+        reasons.append("cleanly completes an enemy missing role")
+
     if not reasons:
-        return ["best overall ranker score for the current ban state"]
+        reasons.append("best overall ranker score for the current ban state")
+
     return reasons[:3]
 
 
@@ -216,29 +179,27 @@ def _feature_frame(rows: list[dict[str, Any]], feature_names: list[str]) -> pd.D
     return frame
 
 
-def _context_frame(
+def _context_sort_frame(
     frame: pd.DataFrame,
     acting_team: str,
     blue_picks: list[str],
     red_picks: list[str],
     hero_table: dict[str, Any],
     complete_stats: dict[str, Any],
+    top_pool_size: int,
 ) -> pd.DataFrame:
-    annotated = frame.copy()
     if not blue_picks and not red_picks:
-        annotated["enemy_pick_synergy_synergy_score_max"] = 0.0
-        annotated["counter_vs_our_picks_counter_score_max"] = 0.0
-        annotated["enemy_role_role_completion_max"] = 0.0
-        annotated["context_peak"] = 0.0
-        annotated["context_support"] = 0.0
-        annotated["final_score"] = annotated["prior_score"]
-        return annotated
+        frame["context_peak"] = 0.0
+        frame["context_support"] = 0.0
+        frame["final_score"] = frame["prior_score"]
+        return frame.sort_values(by=["final_score", "candidate_ban_rate"], ascending=False).reset_index(drop=True)
 
     enemy_picks = red_picks if acting_team == "blue" else blue_picks
     our_picks = blue_picks if acting_team == "blue" else red_picks
     enemy_missing_roles = infer_missing_roles(enemy_picks, hero_table)
 
-    for row_index, row in annotated.iterrows():
+    top_pool = frame.head(top_pool_size).copy()
+    for row_index, row in top_pool.iterrows():
         candidate_hero = str(row["candidate_hero"])
 
         synergy_summary = summarize_candidate_synergy(
@@ -265,7 +226,7 @@ def _context_frame(
             **counter_summary,
             **role_summary,
         }.items():
-            annotated.loc[row_index, feature_name] = float(feature_value)
+            top_pool.loc[row_index, feature_name] = float(feature_value)
 
     context_columns = [
         "enemy_pick_synergy_synergy_score_max",
@@ -276,66 +237,43 @@ def _context_frame(
         "enemy_role_role_completion_mean",
     ]
     for column_name in context_columns:
-        if column_name not in annotated.columns:
-            annotated[column_name] = 0.0
+        if column_name not in top_pool.columns:
+            top_pool[column_name] = 0.0
 
-    annotated["context_peak"] = annotated[
+    top_pool["context_peak"] = top_pool[
         [
             "enemy_pick_synergy_synergy_score_max",
             "counter_vs_our_picks_counter_score_max",
             "enemy_role_role_completion_max",
         ]
     ].max(axis=1)
-    annotated["context_support"] = annotated[
+    top_pool["context_support"] = top_pool[
         [
             "enemy_pick_synergy_synergy_score_mean",
             "counter_vs_our_picks_counter_score_mean",
             "enemy_role_role_completion_mean",
         ]
     ].mean(axis=1)
-    annotated["final_score"] = annotated["prior_score"]
-    return annotated
+    top_pool["final_score"] = top_pool["prior_score"]
 
+    remaining_pool = frame.iloc[top_pool_size:].copy()
+    if not remaining_pool.empty:
+        remaining_pool["context_peak"] = 0.0
+        remaining_pool["context_support"] = 0.0
+        remaining_pool["final_score"] = remaining_pool["prior_score"]
 
-def _contribution_frame(
-    frame: pd.DataFrame,
-    feature_names: list[str],
-    ranker: XGBRanker,
-) -> pd.DataFrame:
-    dmatrix = DMatrix(
-        frame[feature_names].fillna(0.0),
-        feature_names=feature_names,
+    reranked_top = top_pool.sort_values(
+        by=[
+            "context_peak",
+            "context_support",
+            "prior_score",
+            "candidate_ban_rate",
+        ],
+        ascending=False,
     )
-    contributions = ranker.get_booster().predict(dmatrix, pred_contribs=True)
-    contribution_frame = pd.DataFrame(
-        contributions,
-        columns=[*feature_names, "bias"],
-        index=frame.index,
-    )
-    return contribution_frame
+    combined = pd.concat([reranked_top, remaining_pool], axis=0, ignore_index=True)
 
-
-def _attach_reason_contributions(
-    frame: pd.DataFrame,
-    contribution_frame: pd.DataFrame,
-) -> pd.DataFrame:
-    annotated = frame.copy()
-    positive_contributions = contribution_frame.clip(lower=0.0)
-    for contribution_column, _, feature_tokens in BAN_REASON_GROUPS:
-        matching_columns = [
-            feature_name
-            for feature_name in positive_contributions.columns
-            if feature_name != "bias"
-            and any(
-                feature_name == token or feature_name.startswith(token)
-                for token in feature_tokens
-            )
-        ]
-        if not matching_columns:
-            annotated[contribution_column] = 0.0
-            continue
-        annotated[contribution_column] = positive_contributions[matching_columns].sum(axis=1)
-    return annotated
+    return combined.reset_index(drop=True)
 
 
 def recommend_next_bans(
@@ -385,20 +323,19 @@ def recommend_next_bans(
     ranker = _load_global_ranker()
     scores = ranker.predict(feature_frame[feature_names].fillna(0.0)).tolist()
     feature_frame["prior_score"] = scores
-    contribution_frame = _contribution_frame(feature_frame, feature_names, ranker)
-    feature_frame = _attach_reason_contributions(feature_frame, contribution_frame)
-    feature_frame = _context_frame(
-        frame=feature_frame,
+    sorted_prior_frame = feature_frame.sort_values(
+        by=["prior_score", "candidate_ban_rate"],
+        ascending=False,
+    ).reset_index(drop=True)
+    sorted_frame = _context_sort_frame(
+        frame=sorted_prior_frame,
         acting_team=turn["team"],
         blue_picks=blue_picks,
         red_picks=red_picks,
         hero_table=hero_table,
         complete_stats=_load_complete_stats(),
+        top_pool_size=max(top_k * 4, 12) if rerank_pool_size is None else max(1, rerank_pool_size),
     )
-    sorted_frame = feature_frame.sort_values(
-        by=["prior_score", "candidate_ban_rate"],
-        ascending=False,
-    ).reset_index(drop=True)
 
     recommendations: list[dict[str, Any]] = []
     for rank, row in enumerate(sorted_frame.head(max(1, top_k)).to_dict(orient="records"), start=1):
@@ -419,14 +356,19 @@ def recommend_next_bans(
                     "counter_vs_our_picks_max": float(row.get("counter_vs_our_picks_counter_score_max", 0.0)),
                     "enemy_role_completion_max": float(row.get("enemy_role_role_completion_max", 0.0)),
                 },
-                "reasons": _score_reason_flags(row),
+                "reasons": _score_reason_flags(row, sorted_frame),
             }
         )
 
     return {
         **turn,
         "candidate_count": int(len(candidate_heroes)),
-        "rerank_pool_size": int(len(candidate_heroes)),
+        "rerank_pool_size": int(
+            min(
+                len(candidate_heroes),
+                max(top_k * 4, 12) if rerank_pool_size is None else max(1, rerank_pool_size),
+            )
+        ),
         "recommendations": recommendations,
     }
 

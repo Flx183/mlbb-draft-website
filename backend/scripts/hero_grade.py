@@ -88,12 +88,9 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--weighting",
-        choices=["critic", "entropy", "equal", "manual"],
+        choices=["critic", "entropy", "manual"],
         default="critic",
-        help=(
-            "How to determine feature weights for pick rate, ban rate, and adjusted win rate. "
-            "'manual' is kept as a legacy alias for equal fixed weights."
-        ),
+        help="How to determine feature weights for pick rate, ban rate, and adjusted win rate.",
     )
     parser.add_argument(
         "--output",

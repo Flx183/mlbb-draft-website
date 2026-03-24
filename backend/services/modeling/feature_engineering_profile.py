@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from functools import lru_cache
-import math
 from pathlib import Path
 from typing import Any, TypedDict
 
@@ -12,7 +11,6 @@ from backend.services.common.file_utils import load_json
 ROOT_DIR = Path(__file__).resolve().parents[3]
 MODEL_DIR = ROOT_DIR / "backend/data/modeling/models"
 FEATURE_ENGINEERING_PROFILE_PATH = MODEL_DIR / "feature_engineering_profile.json"
-PROCESSED_STATS_PATH = ROOT_DIR / "backend/data/processed/complete_hero_stats.json"
 
 
 class FeatureEngineeringProfile(TypedDict):
@@ -85,7 +83,7 @@ def load_feature_engineering_profile(
     validated_payload = _validate_feature_engineering_profile(load_json(path))
     if validated_payload is not None:
         return validated_payload
-    return build_current_feature_engineering_profile()
+    return bootstrap_feature_engineering_profile()
 
 
 def _quantile_candidates(
@@ -174,206 +172,6 @@ def derive_feature_engineering_candidates(processed_stats: dict[str, Any]) -> di
             minimum=1.0,
             baseline=4.0,
         ),
-    }
-
-
-def _beta_binomial_log_likelihood(
-    observations: list[tuple[int, float]],
-    mean_rate: float,
-    concentration: int,
-) -> float:
-    bounded_mean_rate = min(max(float(mean_rate), 1e-6), 1.0 - 1e-6)
-    alpha = bounded_mean_rate * float(concentration)
-    beta = (1.0 - bounded_mean_rate) * float(concentration)
-    if alpha <= 0.0 or beta <= 0.0:
-        return float("-inf")
-
-    total_log_likelihood = 0.0
-    for trials, successes in observations:
-        if trials <= 0:
-            continue
-        failures = float(trials) - float(successes)
-        total_log_likelihood += (
-            math.lgamma(trials + 1)
-            - math.lgamma(float(successes) + 1.0)
-            - math.lgamma(failures + 1.0)
-            + math.lgamma(float(successes) + alpha)
-            + math.lgamma(failures + beta)
-            - math.lgamma(float(trials) + alpha + beta)
-            + math.lgamma(alpha + beta)
-            - math.lgamma(alpha)
-            - math.lgamma(beta)
-        )
-    return float(total_log_likelihood)
-
-
-def _between_class_variance(values: list[float], threshold: float) -> float:
-    lower = [value for value in values if value <= threshold]
-    upper = [value for value in values if value > threshold]
-    if not lower or not upper:
-        return float("-inf")
-
-    lower_weight = len(lower) / len(values)
-    upper_weight = len(upper) / len(values)
-    lower_mean = sum(lower) / len(lower)
-    upper_mean = sum(upper) / len(upper)
-    return lower_weight * upper_weight * ((upper_mean - lower_mean) ** 2)
-
-
-def _hero_win_observations(processed_stats: dict[str, Any]) -> tuple[list[tuple[int, float]], float]:
-    heroes = processed_stats.get("heroes", {})
-    if not isinstance(heroes, dict):
-        raise ValueError("Processed stats payload is missing the hero table.")
-
-    observations: list[tuple[int, float]] = []
-    total_picks = 0
-    total_wins = 0.0
-    for payload in heroes.values():
-        if not isinstance(payload, dict):
-            continue
-        stats = payload.get("stats", {})
-        if not isinstance(stats, dict):
-            continue
-        picks = int(stats.get("picked", 0) or 0)
-        wins = float(stats.get("wins", 0) or 0.0)
-        if picks <= 0:
-            continue
-        observations.append((picks, wins))
-        total_picks += picks
-        total_wins += wins
-
-    global_win_rate = total_wins / total_picks if total_picks > 0 else 0.5
-    return observations, global_win_rate
-
-
-def _pair_win_observations(processed_stats: dict[str, Any]) -> tuple[list[tuple[int, float]], float]:
-    heroes = processed_stats.get("heroes", {})
-    if not isinstance(heroes, dict):
-        raise ValueError("Processed stats payload is missing the hero table.")
-
-    observations: list[tuple[int, float]] = []
-    total_games = 0
-    total_wins = 0.0
-    seen_pairs: set[tuple[str, str, str]] = set()
-    for hero_name, payload in heroes.items():
-        if not isinstance(payload, dict):
-            continue
-        for matrix_name in ("synergy_matrix", "counter_matrix"):
-            matrix = payload.get(matrix_name, {})
-            if not isinstance(matrix, dict):
-                continue
-            for other_hero, record in matrix.items():
-                if not isinstance(record, dict):
-                    continue
-                pair_key = tuple(sorted((str(hero_name), str(other_hero)))) + (matrix_name,)
-                if pair_key in seen_pairs:
-                    continue
-                seen_pairs.add(pair_key)
-                games = int(record.get("games", 0) or 0)
-                if games <= 0:
-                    continue
-                win_rate = float(record.get("win_rate", 0.5) or 0.5)
-                wins = win_rate * games
-                observations.append((games, wins))
-                total_games += games
-                total_wins += wins
-
-    global_pair_win_rate = total_wins / total_games if total_games > 0 else 0.5
-    return observations, global_pair_win_rate
-
-
-def _secondary_role_probabilities(processed_stats: dict[str, Any]) -> list[float]:
-    heroes = processed_stats.get("heroes", {})
-    if not isinstance(heroes, dict):
-        raise ValueError("Processed stats payload is missing the hero table.")
-
-    probabilities: list[float] = []
-    for payload in heroes.values():
-        if not isinstance(payload, dict):
-            continue
-        stats = payload.get("stats", {})
-        if not isinstance(stats, dict):
-            continue
-        picks = int(stats.get("picked", 0) or 0)
-        roles = stats.get("roles", {})
-        if picks <= 0 or not isinstance(roles, dict):
-            continue
-
-        role_probabilities = sorted(
-            (
-                int(role_payload.get("picked", 0) or 0) / picks
-                for role_payload in roles.values()
-                if isinstance(role_payload, dict) and int(role_payload.get("picked", 0) or 0) > 0
-            ),
-            reverse=True,
-        )
-        probabilities.extend(probability for probability in role_probabilities[1:] if probability > 0.0)
-    return probabilities
-
-
-def build_current_feature_engineering_profile(
-    processed_stats: dict[str, Any] | None = None,
-) -> FeatureEngineeringProfile:
-    resolved_stats = processed_stats
-    if resolved_stats is None:
-        resolved_stats = load_json(PROCESSED_STATS_PATH)
-    if not isinstance(resolved_stats, dict):
-        return bootstrap_feature_engineering_profile()
-
-    candidate_values = derive_feature_engineering_candidates(resolved_stats)
-
-    hero_observations, global_win_rate = _hero_win_observations(resolved_stats)
-    smoothing_candidates = [int(round(value)) for value in candidate_values["adjusted_win_rate_smoothing_games"]]
-    smoothing_scores = {
-        candidate: _beta_binomial_log_likelihood(hero_observations, global_win_rate, candidate)
-        for candidate in smoothing_candidates
-    }
-    best_smoothing_games = max(smoothing_scores, key=smoothing_scores.get) if smoothing_scores else 8
-
-    pair_observations, global_pair_win_rate = _pair_win_observations(resolved_stats)
-    pair_candidates = [int(round(value)) for value in candidate_values["pair_prior_games"]]
-    pair_scores = {
-        candidate: _beta_binomial_log_likelihood(pair_observations, global_pair_win_rate, candidate)
-        for candidate in pair_candidates
-    }
-    best_pair_prior_games = max(pair_scores, key=pair_scores.get) if pair_scores else 4
-
-    secondary_role_probabilities = _secondary_role_probabilities(resolved_stats)
-    threshold_candidates = [float(value) for value in candidate_values["flexibility_role_threshold"]]
-    threshold_scores = {
-        candidate: _between_class_variance(secondary_role_probabilities, candidate)
-        for candidate in threshold_candidates
-    }
-    valid_threshold_scores = {
-        candidate: score
-        for candidate, score in threshold_scores.items()
-        if math.isfinite(score)
-    }
-    best_threshold = (
-        max(valid_threshold_scores, key=valid_threshold_scores.get)
-        if valid_threshold_scores
-        else 0.15
-    )
-
-    return {
-        "source": "trained-fast-empirical-bayes-and-otsu",
-        "objective": (
-            "fit hero and pair shrinkage with beta-binomial likelihood; "
-            "fit flexibility threshold with between-class variance on secondary role probabilities"
-        ),
-        "adjusted_win_rate_smoothing_games": int(best_smoothing_games),
-        "flexibility_role_threshold": float(best_threshold),
-        "pair_prior_games": int(best_pair_prior_games),
-        "pick_validation_metrics": {
-            "hero_beta_binomial_log_likelihood": float(smoothing_scores.get(best_smoothing_games, 0.0)),
-            "secondary_role_between_class_variance": float(
-                valid_threshold_scores.get(best_threshold, 0.0)
-            ),
-        },
-        "ban_validation_metrics": {
-            "pair_beta_binomial_log_likelihood": float(pair_scores.get(best_pair_prior_games, 0.0)),
-        },
-        "search_candidates": candidate_values,
     }
 
 

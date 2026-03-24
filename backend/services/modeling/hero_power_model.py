@@ -37,6 +37,19 @@ class HeroPowerProfile(TypedDict):
     total_importance: float
 
 
+def bootstrap_hero_power_profile() -> HeroPowerProfile:
+    equal_weight = 1.0 / len(HERO_POWER_FEATURE_NAMES)
+    return {
+        "source": "bootstrap-equal-weights",
+        "model_sources": [],
+        "feature_weights": {
+            feature_name: equal_weight
+            for feature_name in HERO_POWER_FEATURE_NAMES
+        },
+        "total_importance": 0.0,
+    }
+
+
 def _normalize_feature_weights(weights: dict[str, float]) -> dict[str, float]:
     clipped = {
         feature_name: max(0.0, float(weights.get(feature_name, 0.0)))
@@ -175,6 +188,8 @@ def build_current_hero_power_profile() -> HeroPowerProfile:
         ]
         if source is not None
     ]
+    if not model_sources:
+        return bootstrap_hero_power_profile()
     return build_hero_power_profile(model_sources)
 
 

@@ -20,14 +20,13 @@ def print_report(
     stage: str,
     total_games: int,
     weights: dict[str, float],
-    weighting_method: str,
 ) -> None:
     label = tournament_name if not stage else f"{tournament_name} / {stage}"
     print(f"Hero Grade report for {label}")
     print(f"Inferred total games: {total_games}")
     print(
         "Weights "
-        f"({weighting_method}): "
+        "(trained hero_power_profile): "
         f"pick_rate={weights['pick_rate']:.3f}, "
         f"ban_rate={weights['ban_rate']:.3f}, "
         f"adjusted_win_rate={weights['adjusted_win_rate']:.3f}"
@@ -87,12 +86,6 @@ def build_parser() -> argparse.ArgumentParser:
         help="Pseudo-games used to smooth win rate for small samples.",
     )
     parser.add_argument(
-        "--weighting",
-        choices=["critic", "entropy", "manual"],
-        default="critic",
-        help="How to determine feature weights for pick rate, ban rate, and adjusted win rate.",
-    )
-    parser.add_argument(
         "--output",
         type=Path,
         default=None,
@@ -110,9 +103,8 @@ def main() -> None:
         stage=stage,
         total_games=args.games,
         smoothing_games=args.smoothing_games,
-        weighting_method=args.weighting,
     )
-    print_report(rows, tournament_name, stage, total_games, weights, args.weighting)
+    print_report(rows, tournament_name, stage, total_games, weights)
     if args.output is not None:
         write_csv(rows, args.output)
         print(f"\nSaved CSV to {args.output}")

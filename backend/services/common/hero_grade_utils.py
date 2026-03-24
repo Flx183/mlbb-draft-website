@@ -3,12 +3,6 @@ from typing import Optional
 
 
 GRADE_ORDER = ["D", "C", "B", "A", "S"]
-FEATURE_NAMES = ("pick_rate", "ban_rate", "adjusted_win_rate")
-
-
-def equal_weights() -> dict[str, float]:
-    uniform_weight = 1.0 / len(FEATURE_NAMES)
-    return {feature_name: uniform_weight for feature_name in FEATURE_NAMES}
 
 def parse_percent(value: str) -> Optional[float]:
     if value is None:
@@ -118,66 +112,6 @@ def correlation(x_values: list[float], y_values: list[float]) -> float:
     if denominator == 0:
         return 0.0
     return numerator / denominator
-
-
-def critic_weights(matrix: list[list[float]]) -> dict[str, float]:
-    normalized = min_max_normalize(matrix)
-    if not normalized:
-        return equal_weights()
-
-    columns = list(zip(*normalized))
-    scores: list[float] = []
-    for column in columns:
-        mean = sum(column) / len(column)
-        variance = sum((value - mean) ** 2 for value in column) / len(column)
-        standard_deviation = math.sqrt(variance)
-        contrast = sum(1 - correlation(list(column), list(other_column)) for other_column in columns)
-        scores.append(standard_deviation * contrast)
-
-    total_score = sum(scores)
-    if total_score == 0:
-        return equal_weights()
-
-    return {
-        feature_name: score / total_score
-        for feature_name, score in zip(FEATURE_NAMES, scores)
-    }
-
-
-def entropy_weights(matrix: list[list[float]]) -> dict[str, float]:
-    normalized = min_max_normalize(matrix)
-    if not normalized:
-        return equal_weights()
-
-    columns = list(zip(*normalized))
-    feature_scores: list[float] = []
-    entropy_scale = 1 / math.log(len(normalized)) if len(normalized) > 1 else 0
-
-    for column in columns:
-        shifted = [value + 1e-12 for value in column]
-        denominator = sum(shifted)
-        probabilities = [value / denominator for value in shifted] if denominator else shifted
-        entropy = -entropy_scale * sum(
-            probability * math.log(probability) for probability in probabilities if probability > 0
-        )
-        feature_scores.append(1 - entropy)
-
-    total_score = sum(feature_scores)
-    if total_score == 0:
-        return equal_weights()
-
-    return {
-        feature_name: score / total_score
-        for feature_name, score in zip(FEATURE_NAMES, feature_scores)
-    }
-
-
-def resolve_weights(matrix: list[list[float]], weighting_method: str) -> dict[str, float]:
-    if weighting_method in {"manual", "equal"}:
-        return equal_weights()
-    if weighting_method == "entropy":
-        return entropy_weights(matrix)
-    return critic_weights(matrix)
 
 
 def weighted_priority_score(

@@ -12,7 +12,6 @@ from backend.services.common.hero_grade_utils import (
     parse_percent,
     parse_pick_input,
     percentile_ranks,
-    resolve_weights,
     weighted_priority_score,
 )
 from backend.services.liquipedia.page_scraper import (
@@ -20,6 +19,7 @@ from backend.services.liquipedia.page_scraper import (
     DEFAULT_TOURNAMENT_NAME,
     get_liquipedia_hero_data,
 )
+from backend.services.modeling.hero_power_model import load_hero_power_profile
 
 
 @dataclass
@@ -117,19 +117,13 @@ def enrich_raw_rows(
 
 def calculate_priority_scores(
     raw_rows: list[dict[str, float | int | str | None]],
-    weighting_method: str,
 ) -> tuple[list[float], dict[str, float]]:
-    weights = resolve_weights(
-        [
-            [
-                float(row["pick_rate"]),
-                float(row["ban_rate"]),
-                float(row["adjusted_win_rate"]),
-            ]
-            for row in raw_rows
-        ],
-        weighting_method,
-    )
+    profile = load_hero_power_profile()
+    weights = {
+        "pick_rate": float(profile["feature_weights"]["pick_rate"]),
+        "ban_rate": float(profile["feature_weights"]["ban_rate"]),
+        "adjusted_win_rate": float(profile["feature_weights"]["adjusted_win_rate"]),
+    }
 
     pick_rate_ranks = percentile_ranks([float(row["pick_rate"]) for row in raw_rows])
     ban_rate_ranks = percentile_ranks([float(row["ban_rate"]) for row in raw_rows])
@@ -197,7 +191,6 @@ def build_hero_grades(
     stage: Optional[str] = None,
     total_games: Optional[int] = None,
     smoothing_games: int = 8,
-    weighting_method: str = "critic",
 ) -> tuple[list[HeroGradeRow], int, dict[str, float]]:
     tournament_name = tournament_name or DEFAULT_TOURNAMENT_NAME
     stage = DEFAULT_STAGE if stage is None else stage
@@ -209,7 +202,7 @@ def build_hero_grades(
     raw_rows = build_raw_rows(hero_data, total_games)
     resolved_total_games = resolve_total_games_from_rows(raw_rows, total_games)
     enrich_raw_rows(raw_rows, resolved_total_games, smoothing_games)
-    priority_scores, weights = calculate_priority_scores(raw_rows, weighting_method)
+    priority_scores, weights = calculate_priority_scores(raw_rows)
     graded_rows = build_graded_rows(raw_rows, priority_scores, resolved_total_games)
 
     return sort_graded_rows(graded_rows), resolved_total_games, weights

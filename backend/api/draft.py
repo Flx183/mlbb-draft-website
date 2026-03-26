@@ -10,13 +10,6 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
-from backend.services.modeling.advisor_pipeline import (
-    advise_bans,
-    advise_picks,
-    recommend_bans,
-    recommend_picks,
-)
-
 router = APIRouter()
 
 
@@ -33,6 +26,9 @@ class DraftStateRequest(BaseModel):
 
 @router.post("/recommend-bans")
 def recommend_bans_route(request: DraftStateRequest):
+    from backend.services.modeling.advisor_pipeline import (
+    recommend_bans,
+)
     return recommend_bans(
         team=request.team,
         blue_picks=request.blue_picks,
@@ -47,6 +43,9 @@ def recommend_bans_route(request: DraftStateRequest):
 
 @router.post("/advise-bans")
 def advise_bans_route(request: DraftStateRequest):
+    from backend.services.modeling.advisor_pipeline import (
+    advise_bans
+)
     return advise_bans(
         team=request.team,
         blue_picks=request.blue_picks,
@@ -61,6 +60,9 @@ def advise_bans_route(request: DraftStateRequest):
 
 @router.post("/recommend-picks")
 def recommend_picks_route(request: DraftStateRequest):
+    from backend.services.modeling.advisor_pipeline import (
+    recommend_picks,
+)
     return recommend_picks(
         team=request.team,
         blue_picks=request.blue_picks,
@@ -75,6 +77,9 @@ def recommend_picks_route(request: DraftStateRequest):
 
 @router.post("/advise-picks")
 def advise_picks_route(request: DraftStateRequest):
+    from backend.services.modeling.advisor_pipeline import (
+    advise_picks
+)
     return advise_picks(
         team=request.team,
         blue_picks=request.blue_picks,

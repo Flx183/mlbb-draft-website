@@ -176,6 +176,7 @@ useEffect(() => {
 
   async function fetchData() {
     try {
+      if (!currentStep) return;
       const endpoint =
         currentStep.action === "ban"
           ? "/advise-bans"

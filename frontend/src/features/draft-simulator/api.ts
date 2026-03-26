@@ -1,7 +1,6 @@
 import type { RecommendationRequest, RecommendationResponse} from "./types/draft"
 
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL;
+const API_BASE = "https://ml-2-8lkf.onrender.com";
 
 async function postDraftState(
   endpoint: string,

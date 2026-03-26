@@ -1,5 +1,11 @@
-fastapi==0.135.1
-uvicorn==0.41.0
-pydantic==2.12.5
-httpx==0.28.1
-python-dotenv==1.2.2
+fastapi
+uvicorn
+pydantic
+httpx
+python-dotenv
+
+numpy
+pandas
+scikit-learn
+xgboost
+sentence-transformers

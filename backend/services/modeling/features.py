@@ -643,12 +643,14 @@ def build_pick_candidate_feature_row(
     hero_table: dict[str, Any],
     complete_stats: dict[str, Any],
     feature_profile: FeatureEngineeringProfile | None = None,
+    our_missing_roles: list[str] | None = None,
+    enemy_missing_roles: list[str] | None = None,
 ) -> dict[str, float]:
     resolved_feature_profile = _resolve_feature_engineering_profile(feature_profile)
     candidate = _hero_features_or_default(candidate_hero, hero_table)
     all_bans = list(dict.fromkeys([*blue_bans, *red_bans]))
-    our_missing_roles = infer_missing_roles(our_picks, hero_table) if our_picks else []
-    enemy_missing_roles = infer_missing_roles(enemy_picks, hero_table) if enemy_picks else []
+    our_missing_roles = our_missing_roles if our_missing_roles is not None else (infer_missing_roles(our_picks, hero_table) if our_picks else [])
+    enemy_missing_roles = enemy_missing_roles if enemy_missing_roles is not None else (infer_missing_roles(enemy_picks, hero_table) if enemy_picks else [])
 
     features = {
         "team_is_blue": 1.0 if acting_team == "blue" else 0.0,

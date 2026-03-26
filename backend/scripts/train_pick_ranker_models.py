@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+from time import perf_counter
 
 import pandas as pd
 from xgboost import XGBRanker
@@ -17,6 +18,7 @@ from backend.services.modeling.dataset_builder import build_pick_fit_dataset
 from backend.services.modeling.feature_engineering_profile import (
     FEATURE_ENGINEERING_PROFILE_PATH,
     FeatureEngineeringProfile,
+    load_feature_engineering_profile,
     tune_feature_engineering_profile,
 )
 from backend.services.modeling.features import PROCESSED_STATS_PATH
@@ -116,6 +118,11 @@ if __name__ == "__main__":
         description="Train the pick-fit XGBoost ranker from the latest raw tournament data."
     )
     parser.add_argument(
+        "--retune-feature-profile",
+        action="store_true",
+        help="Retune the feature engineering profile before training instead of reusing the saved profile.",
+    )
+    parser.add_argument(
         "--reuse-dataset",
         action="store_true",
         help="Reuse the existing pick_fit_ranker_dataset.json instead of rebuilding it from raw tournament data.",
@@ -132,15 +139,26 @@ if __name__ == "__main__":
     if not isinstance(processed_stats, dict):
         raise ValueError(f"Expected processed hero stats dict at {PROCESSED_STATS_PATH}")
 
-    feature_profile = tune_feature_engineering_profile(
-        processed_stats=processed_stats,
-        processed_stats_path=PROCESSED_STATS_PATH,
-        raw_dir=RAW_TOURNAMENTS_DIR,
-        pick_candidate_params=PICK_RANKER_CANDIDATE_PARAMS,
-        ban_candidate_params=BAN_RANKER_CANDIDATE_PARAMS,
-    )
-    save_json(FEATURE_ENGINEERING_PROFILE_PATH, feature_profile)
-    print(f"Saved feature engineering profile to {FEATURE_ENGINEERING_PROFILE_PATH}")
+    feature_profile_started_at = perf_counter()
+    if args.retune_feature_profile or not FEATURE_ENGINEERING_PROFILE_PATH.exists():
+        feature_profile = tune_feature_engineering_profile(
+            processed_stats=processed_stats,
+            processed_stats_path=PROCESSED_STATS_PATH,
+            raw_dir=RAW_TOURNAMENTS_DIR,
+            pick_candidate_params=PICK_RANKER_CANDIDATE_PARAMS,
+            ban_candidate_params=BAN_RANKER_CANDIDATE_PARAMS,
+        )
+        save_json(FEATURE_ENGINEERING_PROFILE_PATH, feature_profile)
+        print(
+            f"Saved feature engineering profile to {FEATURE_ENGINEERING_PROFILE_PATH} "
+            f"in {perf_counter() - feature_profile_started_at:.1f}s"
+        )
+    else:
+        feature_profile = load_feature_engineering_profile()
+        print(
+            f"Reusing feature engineering profile from {FEATURE_ENGINEERING_PROFILE_PATH} "
+            f"in {perf_counter() - feature_profile_started_at:.1f}s"
+        )
 
     if args.reuse_dataset and DATASET_PATH.exists():
         metadata, df = load_dataset_frame(DATASET_PATH)

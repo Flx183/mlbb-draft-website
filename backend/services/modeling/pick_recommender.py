@@ -19,6 +19,7 @@ from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
     build_hero_feature_table,
     build_pick_candidate_feature_row,
+    infer_missing_roles,
 )
 from backend.services.modeling.pick_constants import (
     FIRST_PICK_PHASE_REQUIRED_BANS,
@@ -325,6 +326,9 @@ def recommend_next_picks(
         pick_order=turn["pick_order"],
     )
 
+    precomputed_our_missing_roles = infer_missing_roles(our_picks, hero_table) if our_picks else []
+    precomputed_enemy_missing_roles = infer_missing_roles(enemy_picks, hero_table) if enemy_picks else []
+
     rows: list[dict[str, Any]] = []
     for candidate_hero in candidate_heroes:
         feature_row = build_pick_candidate_feature_row(
@@ -338,6 +342,8 @@ def recommend_next_picks(
             red_bans=red_bans,
             hero_table=hero_table,
             complete_stats=complete_stats,
+            our_missing_roles=precomputed_our_missing_roles,
+            enemy_missing_roles=precomputed_enemy_missing_roles,
         )
         rows.append(
             {

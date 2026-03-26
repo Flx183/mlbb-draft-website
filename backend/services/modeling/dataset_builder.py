@@ -17,6 +17,7 @@ from backend.services.modeling.features import (
     build_ban_candidate_feature_row,
     build_hero_feature_table,
     build_pick_candidate_feature_row,
+    infer_missing_roles,
 )
 from backend.services.modeling.pick_signal_model import ALL_SIGNAL_COLUMNS, build_pick_signal_frame
 
@@ -187,8 +188,11 @@ def build_pick_fit_dataset(
             unique_team_picks = list(dict.fromkeys(team_picks))
             unique_enemy_picks = list(dict.fromkeys(enemy_picks))
 
+            precomputed_enemy_missing_roles = infer_missing_roles(unique_enemy_picks, hero_table) if unique_enemy_picks else []
+
             for slot_index, actual_pick in enumerate(unique_team_picks, start=1):
                 our_picks = [hero_name for hero_name in unique_team_picks if hero_name != actual_pick]
+                precomputed_our_missing_roles = infer_missing_roles(our_picks, hero_table) if our_picks else []
                 unavailable = set(our_picks) | set(unique_enemy_picks) | set(blue_bans) | set(red_bans)
                 query_id = f"{_game_identifier(game_row)}::{acting_team}::pick_fit::{slot_index}::{actual_pick}"
 
@@ -208,6 +212,8 @@ def build_pick_fit_dataset(
                         hero_table=hero_table,
                         complete_stats=processed_stats,
                         feature_profile=resolved_feature_profile,
+                        our_missing_roles=precomputed_our_missing_roles,
+                        enemy_missing_roles=precomputed_enemy_missing_roles,
                     )
                     rows.append(
                         {

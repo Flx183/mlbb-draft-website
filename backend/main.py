@@ -25,4 +25,4 @@ def root():
 
 @app.get("/draft")
 def idk():
-    pass
+    pass    

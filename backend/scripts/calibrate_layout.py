@@ -69,7 +69,7 @@ def mouse_callback(event, x, y, flags, param):
     # Right click to undo last click
     if event == cv2.EVENT_RBUTTONDOWN and clicks:
         clicks.pop()
-        print(f"  Undid last click")
+        print("Undid last click")
         redraw()
 
 img_original = cv2.imread(FRAME_PATH)

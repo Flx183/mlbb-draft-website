@@ -1,4 +1,6 @@
 from __future__ import annotations
+from backend.services.common.parser import parse_csv
+from backend.services.modeling.advisor_pipeline import advise_bans
 
 import argparse
 import json
@@ -9,9 +11,6 @@ import sys
 ROOT_DIR = Path(__file__).resolve().parents[2]
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
-
-from backend.services.common.parser import parse_csv
-from backend.services.modeling.advisor_pipeline import advise_bans
 
 
 def main() -> None:

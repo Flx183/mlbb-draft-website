@@ -1,0 +1,34 @@
+name: Task
+description: Track a concrete engineering or repo-maintenance task.
+title: "[Task] "
+labels:
+  - task
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be true after this task is done?
+      placeholder: CI runs backend linting on every PR.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - frontend
+        - backend
+        - data/modeling
+        - CI/workflows
+        - docs
+        - repo hygiene
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Implementation notes
+      description: Add constraints, context, or linked work items.

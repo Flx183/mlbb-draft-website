@@ -6,10 +6,6 @@ from pathlib import Path
 
 from xgboost import XGBRanker
 
-ROOT_DIR = Path(__file__).resolve().parents[2]
-if str(ROOT_DIR) not in sys.path:
-    sys.path.append(str(ROOT_DIR))
-
 from backend.services.common.file_utils import save_json
 from backend.services.modeling.dataset_builder import build_ban_dataset
 from backend.services.modeling.feature_engineering_profile import (
@@ -34,6 +30,10 @@ from backend.services.modeling.training import (
     tune_xgb_ranker_params,
 )
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
+    
 DATASET_PATH = Path("backend/data/modeling/ban_dataset.json")
 OUTPUT_DIR = Path("backend/data/modeling/models")
 RAW_TOURNAMENTS_DIR = Path("backend/data/raw/tournaments")

@@ -1,0 +1,41 @@
+name: Feature request
+description: Propose an improvement to the product, developer workflow, or repository automation.
+title: "[Feature] "
+labels:
+  - feature
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What need are we trying to solve?
+      placeholder: The current workflow or user experience is missing...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the feature at a high level.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - frontend
+        - backend
+        - data/modeling
+        - CI/workflows
+        - docs
+    validations:
+      required: true
+
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: How will we know this is done?

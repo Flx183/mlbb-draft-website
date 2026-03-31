@@ -8,12 +8,11 @@ from typing import Protocol, TypedDict, cast
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from backend.services.llm.draft_principles import DRAFT_PRINCIPLES
 
 ROOT_DIR = Path(__file__).resolve().parents[3]
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
-
-from backend.services.llm.draft_principles import DRAFT_PRINCIPLES
 
 try:
     from sentence_transformers import SentenceTransformer

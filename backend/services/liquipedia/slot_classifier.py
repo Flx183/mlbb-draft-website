@@ -1,6 +1,5 @@
 
 import cv2
-import numpy as np
 
 def save_empty_template(crop, output_path):
     """

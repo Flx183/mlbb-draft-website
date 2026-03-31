@@ -1,6 +1,5 @@
 import cv2
 import json
-import os
 from pathlib import Path
 
 FRAMES_DIR = "backend/data/raw/frames/m7"

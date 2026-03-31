@@ -1,7 +1,5 @@
 from pathlib import Path
-import shutil
 import yt_dlp
-import time
 import subprocess
 import os
 import cv2
@@ -113,12 +111,12 @@ def process_vod(url, match_id, start_sec=180):
         return str(frame_output_dir)
 
     # Get stream URL (no download)
-    print(f"  Getting stream URL...")
+    print("Getting stream URL...")
     stream_url = get_stream_url(url, start_sec)
 
     # Stream frames directly
     extract_frames_from_stream(stream_url, str(frame_output_dir), start_sec)
-    print(f"  Done! No VOD saved to disk.")
+    print("Done! No VOD saved to disk.")
 
     return str(frame_output_dir)
     

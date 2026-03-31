@@ -1,6 +1,5 @@
 import cv2
 import json
-from pathlib import Path
 
 FRAME_PATH = "backend/data/raw/frames/m7/frame_00001.jpg"
 LAYOUT_PATH = "backend/data/layouts.json"

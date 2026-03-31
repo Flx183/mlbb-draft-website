@@ -10,10 +10,6 @@ from typing import Any
 import pandas as pd
 from xgboost import XGBRanker
 
-ROOT_DIR = Path(__file__).resolve().parents[3]
-if str(ROOT_DIR) not in sys.path:
-    sys.path.append(str(ROOT_DIR))
-
 from backend.services.common.file_utils import load_json
 from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
@@ -38,6 +34,10 @@ from backend.services.modeling.pick_signal_model import (
     pick_signal_prior_score,
 )
 
+ROOT_DIR = Path(__file__).resolve().parents[3]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
+    
 PROCESSED_STATS_ABS_PATH = ROOT_DIR / PROCESSED_STATS_PATH
 MODEL_DIR = ROOT_DIR / "backend/data/modeling/models"
 RANKER_REPORT_PATH = MODEL_DIR / "pick_ranker_report.json"

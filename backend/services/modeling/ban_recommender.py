@@ -10,10 +10,6 @@ from typing import Any
 import pandas as pd
 from xgboost import XGBRanker
 
-ROOT_DIR = Path(__file__).resolve().parents[3]
-if str(ROOT_DIR) not in sys.path:
-    sys.path.append(str(ROOT_DIR))
-
 from backend.services.common.file_utils import load_json
 from backend.services.modeling.ban_constants import BAN_SEQUENCE
 from backend.services.modeling.features import (
@@ -25,6 +21,11 @@ from backend.services.modeling.features import (
     summarize_candidate_role_completion,
     summarize_candidate_synergy,
 )
+
+
+ROOT_DIR = Path(__file__).resolve().parents[3]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
 
 MODEL_DIR = ROOT_DIR / "backend/data/modeling/models"
 RANKER_REPORT_PATH = MODEL_DIR / "ban_ranker_report.json"

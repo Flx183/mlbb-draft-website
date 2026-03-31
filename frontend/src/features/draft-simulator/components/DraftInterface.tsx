@@ -216,10 +216,6 @@ useEffect(() => {
   };
 }, [bluePicks, redPicks, blueBans, redBans, currentStep, hasDraftStarted]);
 
-useEffect(() => {
-  console.log("recommendations updated:", recommendations);
-}, [recommendations]);
-
   return (
     <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col overflow-hidden">
       <div className="w-full max-w-[1900px] mx-auto px-6 pt-3">

@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Frontend local artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Backend local artifacts
+backend/.env
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+
+# Editor folders
+.idea/
+.vscode/

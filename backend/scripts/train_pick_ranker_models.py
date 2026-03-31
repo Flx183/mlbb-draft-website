@@ -8,10 +8,6 @@ from time import perf_counter
 import pandas as pd
 from xgboost import XGBRanker
 
-ROOT_DIR = Path(__file__).resolve().parents[2]
-if str(ROOT_DIR) not in sys.path:
-    sys.path.append(str(ROOT_DIR))
-
 from backend.scripts.train_ban_ranker_models import BAN_RANKER_CANDIDATE_PARAMS
 from backend.services.common.file_utils import load_json, save_json
 from backend.services.modeling.dataset_builder import build_pick_fit_dataset
@@ -49,6 +45,10 @@ from backend.services.modeling.training import (
     tune_xgb_ranker_params,
 )
 
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
+    
 DATASET_PATH = Path("backend/data/modeling/pick_fit_ranker_dataset.json")
 OUTPUT_DIR = Path("backend/data/modeling/models")
 MODEL_PATH = OUTPUT_DIR / "pick_xgb_ranker_global.json"

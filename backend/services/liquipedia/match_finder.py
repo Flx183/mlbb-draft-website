@@ -1,6 +1,4 @@
 from backend.services.liquipedia.liquipedia_api import fetch_table
-from backend.services.common.parser import slugify
-from backend.services.enums.role import SLOT_TO_ROLE
 
 def extract_list(prefix: str, count: int, source: dict) -> list[str]:
     values = []
@@ -36,7 +34,6 @@ def parse_and_normalize_matches(data: dict) -> dict:
             team1_side = extradata.get("team1side")
             team2_side = extradata.get("team2side")
             raw_winner = game.get("winner")
-            vod = game.get("vod")
 
             team1_picks = []
             team2_picks = []
